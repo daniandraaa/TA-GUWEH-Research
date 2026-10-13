@@ -1,0 +1,39 @@
+source_v10_run: 20261006_ecg_fm_transfer_pilot_v10
+records_source: results/research_v4/20261002_patient_mil_hybrids_v4/data/patients.json
+raw_directory: PVCVTRawECGData
+sampling_rate: 2000
+folds: [1, 2, 3, 4, 5]
+arms: [qrs_rr, morphology, morphology_rr, random_l2, pretrained_l2, fusion_random, fusion_pretrained]
+inverse_regularization_C: [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0]
+solver: lbfgs
+maximum_iterations: 2000
+tolerance: 0.00001
+class_weight: balanced_training_patients
+selection: inner_macro_f1_then_smaller_C
+outer_refit: fresh_pipeline_all_outer_training_no_outer_selection
+aggregation: median_and_iqr_all_complete_consensus_candidates_per_patient
+candidate_identity: all_qrs_candidates_not_verified_pvc
+amplitude: per_record_global_rms_shared_across_leads_units_unverified
+morphology_filter_hz: [0.5, 100.0]
+boundary_filter_hz: [0.5, 40.0]
+boundary_search_seconds: 0.18
+boundary_smoothing_seconds: 0.008
+boundary_quiet_seconds: 0.012
+boundary_relative_threshold: 0.06
+boundary_padding_seconds: 0.004
+boundary_duration_ms: [35.0, 240.0]
+complete_crop_before_seconds: 0.25
+complete_crop_after_seconds: 0.30
+ludb_version: 1.0.1
+ludb_records: 200
+ludb_detection_tolerance_seconds: 0.10
+ludb_gate:
+  minimum_detection_f1: 0.95
+  minimum_boundary_coverage: 0.90
+  maximum_median_onset_error_ms: 20.0
+  maximum_median_offset_error_ms: 20.0
+  maximum_median_duration_error_ms: 25.0
+minimum_free_gib: 3.0
+historical_test_enabled: false
+final_training_enabled: false
+interpretation: exploratory_patient_development_not_confirmatory_or_clinically_validated

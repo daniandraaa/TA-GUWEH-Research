@@ -1,0 +1,21 @@
+source_v4_run: 20261002_patient_mil_hybrids_v4
+models: [hierarchical, encoder]
+folds: [1, 2, 3, 4, 5]
+seeds: [42, 43, 44]
+control_segments_per_patient: 4
+candidate_segments_per_patient: 8
+patient_batch_size: 8
+candidate_scenario_id: K08
+sampling_rate: 2000
+segment_length: 5000
+minimum_free_gib: 2.0
+control_reuse: selected_v4_development_stability_with_hashes
+selection_data: development_only
+historical_test_enabled: false
+final_training_enabled: false
+training_rule: inherit_selected_v4_recipe_except_window_count
+priority_rule:
+  positive_mean_paired_fold_macro_f1: true
+  minimum_positive_seeds: 2
+  nonnegative_mean_RVOT_pooled_recall_change: true
+interpretation: exploratory_development_ablation_not_nested_generalization

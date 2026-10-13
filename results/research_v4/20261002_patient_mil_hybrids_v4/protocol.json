@@ -1,0 +1,209 @@
+{
+  "protocol": {
+    "source_v3_run": "20261001_patient_r_candidates_v3",
+    "models": [
+      "encoder",
+      "patchtst",
+      "hierarchical",
+      "residual_multiscale",
+      "lead_time"
+    ],
+    "pooling": [
+      "mean",
+      "attention"
+    ],
+    "learning_rates": [
+      0.0001,
+      0.0005,
+      0.001
+    ],
+    "batch_sizes": [
+      16,
+      32,
+      64
+    ],
+    "segments_per_patient": 4,
+    "sampling_rate": 2000,
+    "segment_length": 5000,
+    "evaluation_segment_chunk": 16,
+    "cv_seed": 42,
+    "stability_seeds": [
+      42,
+      43,
+      44
+    ],
+    "diagnostic_seeds": [
+      42,
+      43,
+      44
+    ],
+    "final_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "primary_seed": 42,
+    "pilot_scenario": "S04",
+    "minimum_free_gib": 2.0,
+    "training": {
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "epochs": 100,
+      "patience": 15,
+      "minimum_lr": 1e-06,
+      "gradient_clip": 1.0,
+      "class_weighting": "inverse_training_patient_class_frequency",
+      "scheduler": "cosine_over_100_epochs"
+    },
+    "new_model": {
+      "dimension": 64,
+      "heads": 4,
+      "layers": 2,
+      "dropout": 0.2,
+      "temporal_bins": 16,
+      "normalization": "GroupNorm"
+    },
+    "endpoint": "patient_level_three_anatomical_groups",
+    "selection_metric": "mean_five_fold_patient_macro_f1",
+    "selection_tiebreak": [
+      "lower_fold_standard_deviation",
+      "pooling_name",
+      "scenario_name"
+    ],
+    "historical_test_previously_observed": true,
+    "expert_ecg_review_available": false,
+    "attention_is_clinical_PVC_annotation": false,
+    "synthetic_training_enabled": false,
+    "pretrained_weights_used": false
+  },
+  "inherited_config": {
+    "protocol_version": 1,
+    "seed": 42,
+    "n_folds": 5,
+    "segment_length": 5000,
+    "overlap": 0.5,
+    "sampling_rate": 2000,
+    "sampling_rate_source": "Asumsi kode EDA historis; sumber dataset belum memverifikasi frekuensi.",
+    "holdout_status": "historical_previously_evaluated",
+    "class_names": [
+      "LVOT",
+      "RVOT_cusp",
+      "RVOT_septal_freewall_other"
+    ],
+    "models": [
+      "encoder",
+      "patchtst",
+      "hierarchical"
+    ],
+    "model": {
+      "n_leads": 12,
+      "n_classes": 3,
+      "cnn_channels": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "cnn_kernels": [
+        7,
+        5,
+        3,
+        3
+      ],
+      "transformer_heads": 4,
+      "transformer_layers": 2,
+      "transformer_dropout": 0.2,
+      "fc_dropout": 0.3,
+      "patch_size": 16
+    },
+    "training": {
+      "optimizer": "Adam",
+      "weight_decay": 0.0001,
+      "epochs": 100,
+      "patience": 10,
+      "scheduler_t_max": 100,
+      "minimum_lr": 1e-06,
+      "gradient_clip": 1.0,
+      "label_smoothing": 0.0,
+      "class_weighting": "none",
+      "eval_batch_size": 64,
+      "drop_last": false
+    },
+    "baseline": {
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "weight_decay": 0.0001,
+      "epochs": 50,
+      "patience": 10,
+      "scheduler_t_max": 50,
+      "minimum_lr": 0.0,
+      "gradient_clip": 1.0,
+      "label_smoothing": 0.0,
+      "class_weighting": "inverse_frequency_training_fold"
+    },
+    "gan": {
+      "epochs": 50,
+      "batch_size": 64,
+      "latent_dim": 100,
+      "embed_dim": 50,
+      "learning_rate": 0.0002,
+      "betas": [
+        0.5,
+        0.999
+      ],
+      "scale": 5.0,
+      "real_target": 0.9,
+      "fake_target": 0.1,
+      "balance_target": "largest_training_class"
+    },
+    "selection": {
+      "metric": "patient_macro_f1",
+      "tie_break": [
+        "lower_sample_std_f1",
+        "scenario_id"
+      ],
+      "final_epochs": "median_best_epoch",
+      "primary_final_seed": 42,
+      "final_seeds": [
+        42
+      ],
+      "test_selection_allowed": false
+    },
+    "shap": {
+      "background_segments": 30,
+      "explain_segments": 30,
+      "integration_samples": 100,
+      "seed": 42
+    }
+  },
+  "source_v3_signature": "d93854c0b53937695ed86076bdc36249e7d12799796c5df9b7717a9af49d4dfb",
+  "source_v3_selection_hash": "2d9c67309f9a83b2da477022ad0bd91dfaf0b922701408b67f43c34f4dfb2895",
+  "source_v2_signature": "5c61cfca1614f22030b69cef6b6575093542526b01f57d2bc24e3edd8c6b37d3",
+  "development_cache": {
+    "X.npy": "c3291ca64555d8160f5bf98509ed79317061e59973f71e68d706ac4b61f0b96d",
+    "segments.csv": "8a9bd6beb4acb266e3c018c18a8ba7b3256c21dd26f87bc79a2951bc4f1a8602",
+    "manifest.json": "e9c7b1679b4bc3975b95da507cd640c0d0787c715830f98a753fbf51219a171a"
+  },
+  "patient_metadata_hash": "96724256ea07de2902404790f699ab7face97b7710fd2ca960f888cd7af59a17",
+  "fold_manifest_hash": "ffd3607857c7c62f34daf33606e3162062e26e30730831ecb39f615c2b82d71b",
+  "code": {
+    "__init__.py": "baaaf2a7c93a56ec4daa43859d2461af29af14efc4c858be18860615688ee187",
+    "__main__.py": "b44949afddb915661887766e0db4978ef49b09e8194ffa4d7c1d266cc21d2631",
+    "analysis.py": "90867c7aeec907ddf13eb53fb0de7ef6d6dbc3965e02c3302b5bb4b84d2ed154",
+    "common.py": "9966e848602c92f74ac77e8d02ce65c1242b2d07d10cda0c39d191c3e24f4990",
+    "data.py": "ed6b0dcffcc5ae1370b237eb0ead4306cfb7df625b6afff1d2ddd9504516ab85",
+    "experiment.py": "40e054ed0bd92b7500942125adb9cf8cbce55ae8d463511a36c1172b82650cd2",
+    "models.py": "6a197640037f6150d42b912d19852e87b8ced868b2372cbcd3bee1e61981001c",
+    "training.py": "1b4aac47cd60bfccb174be928e1a446fb875eb22b83cd049fe9f175e9d0636d9"
+  },
+  "runtime": {
+    "torch": "2.12.0",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0"
+  },
+  "experiment_hash": "37a7f317112dd79dd386fa5451e79ec09ba765bd9a0f7e662bcf117dcc75801a",
+  "test_role": "historical_exploratory_not_external"
+}

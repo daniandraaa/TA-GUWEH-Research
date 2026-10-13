@@ -1,0 +1,11 @@
+# Provenance, sanitasi, dan batas
+
+Sumber kode: arsip actual project `TA_GUWEH_Project_Sharing.zip` dengan SHA-256 `dc6f5e70a51174cb2c597f3c5cb6ba797b77d21ec81a95761c722291766cf19a`, ukuran 634949991 bytes, 3354 file, root asal `TA GUWEH/`. CRC dan checksum seluruh file diverifikasi oleh proses packaging; SHA-256 ZIP diperiksa ulang sebelum publikasi. Pengguna menegaskan izin berbagi deidentified untuk pembimbing. Tidak ada mapping identitas diekspor; hospital_id dipertahankan sebagai nama kolom, nilainya ANONxxxx. Tidak ada perubahan Mac.
+
+Git berisi struktur source + hasil teks yang diperbolehkan; README asal dipindah ke README_PROJECT_ASLI.md dan .gitignore diperluas. Dokumen tambahan di penjelasan/ adalah penjelasan publikasi, bukan hasil eksperimen baru. hasil_eksperimen/ disalin dari paket diskusi pembimbing: CSV 31 endpoint, CSV 18 subregion, PDF, README, skenario, dictionary, manifest, verification dan sources/ agregat. Manifest diskusi menggambarkan paket diskusi asal (termasuk dataset yang tidak disalin ke Git), bukan tree Git ini. sources/ menyediakan jejak angka; hasil bukan hasil training ulang.
+
+PACKAGING_MANIFEST.json dan PACKAGING_SHA256SUMS.txt tetap mencerminkan ZIP asal, termasuk file yang sengaja tidak ditrack Git. Jangan menjalankan checksum itu terhadap Git lalu menganggap file tidak ada sebagai corruption. File utuh tersedia pada release private.
+
+Tidak disertakan dalam Git: arrays .npy/.npz, checkpoints/model weights, prediksi patient/validation, bobot window individual, ukuran klinis individual, raw ECG, Diagnosis.xlsx, .env/secrets, caches/venv. Metadata anonim/fold dapat dipertahankan untuk schema/provenance pada repositori PRIVATE. ZIP privat tetap berisi input model waveform nyata dan prediksi anonim; akses dibatasi pengguna/pembimbing berizin.
+
+Tidak lengkap: GAN caches/checkpoints, pretrained weights, data mentah, binary reports asli dan banyak hasil predecessor dihilangkan oleh packaging. Signature eksperimen lama bergantung metadata/hash/runtime asli; anonimisasi mengubah signature. Tidak dilakukan training/inference, validasi portability environment atau audit leakage independen. Consent/ethics/lisensi tidak diverifikasi mandiri; waveform anonim masih berisiko reidentifikasi. Tidak ditambahkan lisensi MIT ataupun izin publik. Collaborator menunggu konfirmasi akun pembimbing.

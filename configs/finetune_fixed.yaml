@@ -1,0 +1,67 @@
+protocol_version: 1
+seed: 42
+n_folds: 5
+segment_length: 5000
+overlap: 0.5
+sampling_rate: 1000
+sampling_rate_source: "Asumsi kode EDA historis; sumber dataset belum memverifikasi frekuensi."
+holdout_status: historical_previously_evaluated
+class_names: [LVOT, Non-OT, RVOT]
+models: [encoder, patchtst, hierarchical]
+model:
+  n_leads: 12
+  n_classes: 3
+  cnn_channels: [32, 64, 128, 256]
+  cnn_kernels: [7, 5, 3, 3]
+  transformer_heads: 4
+  transformer_layers: 2
+  transformer_dropout: 0.2
+  fc_dropout: 0.3
+  patch_size: 16
+training:
+  optimizer: Adam
+  weight_decay: 0.0001
+  epochs: 100
+  patience: 10
+  scheduler_t_max: 100
+  minimum_lr: 0.000001
+  gradient_clip: 1.0
+  label_smoothing: 0.0
+  class_weighting: none
+  eval_batch_size: 64
+  drop_last: false
+baseline:
+  optimizer: AdamW
+  learning_rate: 0.001
+  batch_size: 32
+  weight_decay: 0.0001
+  epochs: 50
+  patience: 10
+  scheduler_t_max: 50
+  minimum_lr: 0.0
+  gradient_clip: 1.0
+  label_smoothing: 0.0
+  class_weighting: inverse_frequency_training_fold
+gan:
+  epochs: 50
+  batch_size: 64
+  latent_dim: 100
+  embed_dim: 50
+  learning_rate: 0.0002
+  betas: [0.5, 0.999]
+  scale: 5.0
+  real_target: 0.9
+  fake_target: 0.1
+  balance_target: largest_training_class
+selection:
+  metric: patient_macro_f1
+  tie_break: [lower_sample_std_f1, scenario_id]
+  final_epochs: median_best_epoch
+  primary_final_seed: 42
+  final_seeds: [42]
+  test_selection_allowed: false
+shap:
+  background_segments: 30
+  explain_segments: 30
+  integration_samples: 100
+  seed: 42

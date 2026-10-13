@@ -1,0 +1,41 @@
+source_run: 20260930_anatomy_fs2000_v2
+arms: [window_segment, window_patient, r_candidate_segment, r_candidate_patient]
+models: [encoder, patchtst, hierarchical]
+classical_arms: [window_patient, r_candidate_patient]
+final_seeds: [42, 43, 44, 45, 46]
+primary_seed: 42
+primary_family: neural
+endpoint: patient_level_three_anatomical_groups
+minimum_free_gib: 2.0
+retain_cv_checkpoints: false
+class_weighting: inverse_patient_class_frequency_training_fold
+aggregation: arithmetic_mean_segment_probabilities_per_patient
+draws_per_epoch: number_of_training_2p5s_windows_same_across_all_four_arms
+sampling_replacement: true
+patch_model: CNN_patch_transformer_with_zero_padded_tail_and_valid_length_pooling
+patch_is_original_channel_independent_PatchTST: false
+# No PVC annotations or expert review: every detected candidate inherits only
+# its patient's ablation-site label. Detection is an engineering heuristic.
+candidate:
+  fs: 2000
+  before_seconds: 0.2
+  after_seconds: 0.3
+  bandpass_hz: [5.0, 25.0]
+  energy_smooth_seconds: 0.08
+  refractory_seconds: 0.25
+  refinement_seconds: 0.08
+  consensus_seconds: 0.05
+  threshold_mad: 3.0
+  leads: [II, V2, V5]
+  maximum_per_patient: 64
+  fallback: evenly_spaced_500ms_windows_when_no_complete_consensus_candidate
+  pvc_verified: false
+# Same nine LR/BS scenarios as V2. Pilot S01 belongs to the full grid;
+# incomplete pilots cannot select a final model.
+classical:
+  n_estimators: 500
+  max_depth: 12
+  max_features: [0.3, 0.7, 1.0]
+  min_samples_leaf: [1, 2, 4]
+  feature_version: per_lead_statistics_and_bandpower_v1
+  n_jobs: 2

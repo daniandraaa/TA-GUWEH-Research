@@ -1,0 +1,9 @@
+{
+  "baseline_correct_finetune_wrong": 0,
+  "baseline_wrong_finetune_correct": 0,
+  "p_value": 1.0,
+  "observed_difference": 0.0,
+  "ci95_low": 0.0,
+  "ci95_high": 0.0,
+  "proportion_resamples_le_zero": 1.0
+}

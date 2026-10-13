@@ -1,0 +1,88 @@
+{
+  "choices": [
+    {
+      "model": "encoder",
+      "pooling": "attention",
+      "scenario": "S02",
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "patient_batch_size": 8,
+      "f1_mean": 0.6596119497860456,
+      "f1_std": 0.08553446489229372,
+      "accuracy_mean": 0.6486052009456265,
+      "epochs": 29,
+      "collapse_folds": 0
+    },
+    {
+      "model": "patchtst",
+      "pooling": "attention",
+      "scenario": "S02",
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "patient_batch_size": 8,
+      "f1_mean": 0.6447990917978224,
+      "f1_std": 0.07083462050736777,
+      "accuracy_mean": 0.6438750128481858,
+      "epochs": 27,
+      "collapse_folds": 0
+    },
+    {
+      "model": "hierarchical",
+      "pooling": "mean",
+      "scenario": "S05",
+      "learning_rate": 0.0005,
+      "batch_size": 32,
+      "patient_batch_size": 8,
+      "f1_mean": 0.6616216309022274,
+      "f1_std": 0.07974490815882782,
+      "accuracy_mean": 0.6570274437249461,
+      "epochs": 13,
+      "collapse_folds": 0
+    },
+    {
+      "model": "residual_multiscale",
+      "pooling": "attention",
+      "scenario": "S01",
+      "learning_rate": 0.0001,
+      "batch_size": 16,
+      "patient_batch_size": 4,
+      "f1_mean": 0.6269146951799323,
+      "f1_std": 0.07660136293038924,
+      "accuracy_mean": 0.6396196936992496,
+      "epochs": 8,
+      "collapse_folds": 0
+    },
+    {
+      "model": "lead_time",
+      "pooling": "mean",
+      "scenario": "S08",
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "patient_batch_size": 8,
+      "f1_mean": 0.5995866771878766,
+      "f1_std": 0.05442371456441219,
+      "accuracy_mean": 0.5913187377942235,
+      "epochs": 44,
+      "collapse_folds": 0
+    }
+  ],
+  "primary": {
+    "model": "hierarchical",
+    "pooling": "mean",
+    "scenario": "S05",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "patient_batch_size": 8,
+    "f1_mean": 0.6616216309022274,
+    "f1_std": 0.07974490815882782,
+    "accuracy_mean": 0.6570274437249461,
+    "epochs": 13,
+    "collapse_folds": 0
+  },
+  "primary_seed": 42,
+  "selection_source": "development five-fold CV only",
+  "test_used_for_selection": false,
+  "cv_estimate_is_selection_optimistic": true,
+  "historical_test_previously_observed": true,
+  "stability_used_to_pick_best_seed": false
+}

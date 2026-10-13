@@ -1,0 +1,17 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "fit_patients": 184,
+  "reference_patients": 46,
+  "files": {
+    "split.json": "b7caaf55530fa4cd473d6dc04779cb3050a6c22b830937cefe6c7a73687cf8f9",
+    "fit_rows.csv": "92532bb3c1871ed4d6e7e9c38ca77a040811529ff259a7e727386de6ec782a68",
+    "fit_features.csv": "3317413131ccabdde26de40b0f1344e26fc28adeaeff8e900a8de64463fb5259",
+    "reference_rows.csv": "f3d0d145e6e9e9588a74d538130b982768e0613da93ba02e8fae26712e8c71ff",
+    "reference_features.csv": "ef55e516bf162cb167d087baf2f4c453d5373071c53270deaf71ddeca0eb3203",
+    "feature_families.json": "21a8dec0c383af30f8eb29114f8915440e42b7795cf63aed670c5aa778b3af3b",
+    "amplitude_scale.json": "76313441fd547142ebc65155edb5668025915e31894b2d48b620d55a437d57b0",
+    "fit_target_bank.npz": "f8feb91cb9ebc8a4b8b0e82db9b69fbd26da5d5112efc365048487ea4f7f7e6f"
+  },
+  "test_signals_read": false,
+  "record_hash": "036b40a1a6b117dc773c901715d13a0eae40014cc24ec36d0a3444547d036e06"
+}

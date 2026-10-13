@@ -1,0 +1,179 @@
+{
+  "protocol": {
+    "source_v4_run": "20261002_patient_mil_hybrids_v4",
+    "source_v7_run": "20261004_fit_distribution_gan_v7",
+    "models": [
+      "encoder",
+      "patchtst",
+      "hierarchical"
+    ],
+    "pooling": "mean",
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cv_seeds": [
+      42,
+      43,
+      44
+    ],
+    "final_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "primary_seed": 42,
+    "sampling_rate": 2000,
+    "segment_length": 5000,
+    "segments_per_patient": 4,
+    "evaluation_segment_chunk": 16,
+    "minimum_free_gib": 1.5,
+    "baseline": {
+      "id": "baseline",
+      "learning_rate": 0.001,
+      "batch_size": 32
+    },
+    "grid": {
+      "learning_rates": [
+        0.0001,
+        0.0005,
+        0.001
+      ],
+      "batch_sizes": [
+        16,
+        32,
+        64
+      ]
+    },
+    "training": {
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "epochs": 100,
+      "patience": 15,
+      "scheduler_t_max": 100,
+      "minimum_lr": 1e-06,
+      "gradient_clip": 1.0,
+      "class_weighting": "inverse_training_patient_class_frequency"
+    },
+    "gan_augmentation": {
+      "method": "replace_one_of_four_windows_with_same_class_synthetic",
+      "replacements_per_full_bag": 1,
+      "validation_augmented": false,
+      "cv_source": "v7_fold_generator_fit_on_training_fold_only",
+      "final_source": "v13_final_generator_fit_on_development_only"
+    },
+    "final_gan": {
+      "inner_reference_fraction": 0.2,
+      "inner_split_seed": 6042,
+      "seed": 13042
+    },
+    "selection": {
+      "metric": "mean_patient_macro_f1_over_folds_and_cv_seeds",
+      "tiebreak": [
+        "lower_sd",
+        "scenario_id"
+      ],
+      "final_epochs": "median_best_epoch_of_selected_cases"
+    },
+    "statistics": {
+      "bootstrap_resamples": 5000,
+      "bootstrap_seed": 20261008,
+      "alpha": 0.05,
+      "multiple_comparison": "holm"
+    },
+    "shap": {
+      "background_segments": 30,
+      "explained_patients": 15,
+      "nsamples": 100,
+      "seed": 20261008
+    },
+    "historical_test_previously_observed": true,
+    "pretrained_weights_used": false
+  },
+  "source_v4_hash": "37a7f317112dd79dd386fa5451e79ec09ba765bd9a0f7e662bcf117dcc75801a",
+  "source_v7_hash": "6e6a9308d65a3160a17aab54e09ea6149d947ceca72632001a0e62f6bfd11125",
+  "source_v7_files": {
+    "fold_1/generated.json": "66cbec462b23fdaba911b0bb6b43a87c87b70db3bf93daca155a01918ccc078b",
+    "fold_1/quality.json": "e00ef12aaa99644918db8cacbdbe8a09880454381720d68d2475bcf800e2a801",
+    "fold_1/synthetic.npy": "4d0b8520aae35d62a10f5dbb5387708e91ec8b56b374849cf1cc57b3d2f44805",
+    "fold_1/synthetic_labels.csv": "b8c6d0f7c7cd8698bae4789bee24174954d34bfeb40ea3fa831ecbb162cf73b4",
+    "fold_2/generated.json": "5846a3045dcface3df6411d7e9c829d4cbe75a9f02abda07fa3bf9ac0e9b8fc2",
+    "fold_2/quality.json": "7f297e9873bb2315533e766c2ea1b04572615eb98352f2ba561287d2a6594598",
+    "fold_2/synthetic.npy": "0873f2089e0790f3074cc89189db010696e075498478ec23d0f149d6832e9faa",
+    "fold_2/synthetic_labels.csv": "b8c6d0f7c7cd8698bae4789bee24174954d34bfeb40ea3fa831ecbb162cf73b4",
+    "fold_3/generated.json": "3abef5ca3d3058bdc1205a5cc233891c1b131b635c5cf405f19b9ddfe32196ac",
+    "fold_3/quality.json": "2266d33f9f5316611161580f6fb9df23062c0c14455d3f405ba766704783e1e9",
+    "fold_3/synthetic.npy": "97834d58ecc27651b66f27ae99ad5bccf2b6dd7a32c79c450bfb25fa8f28ca43",
+    "fold_3/synthetic_labels.csv": "b8c6d0f7c7cd8698bae4789bee24174954d34bfeb40ea3fa831ecbb162cf73b4",
+    "fold_4/generated.json": "f3d199f7f584cdf020d55eb712c2da5dd0603857b5f09e19174d85ce8b68425e",
+    "fold_4/quality.json": "6fe913541b9bd464ac3f7fbfc18a5dd2e61b1d2a3771062f9f70d20ec4cd2f49",
+    "fold_4/synthetic.npy": "05fe7b63425a1f856350980a1df104f3ed20ca86705019db328dea254efbeaf6",
+    "fold_4/synthetic_labels.csv": "b8c6d0f7c7cd8698bae4789bee24174954d34bfeb40ea3fa831ecbb162cf73b4",
+    "fold_5/generated.json": "96d379996795004d03db2cc41732637dd3d4e74abb151118a015f237d066b993",
+    "fold_5/quality.json": "4b985dd6d81ac6b48c9422d7d29b9f4f76a844081ade831994e76d74a2f10dc6",
+    "fold_5/synthetic.npy": "1bfefd416deff26f270f6b1fdbe5b4aaa26d8cada2e509f72f8ef094f19eeee7",
+    "fold_5/synthetic_labels.csv": "b8c6d0f7c7cd8698bae4789bee24174954d34bfeb40ea3fa831ecbb162cf73b4"
+  },
+  "development_cache": {
+    "X.npy": "c3291ca64555d8160f5bf98509ed79317061e59973f71e68d706ac4b61f0b96d",
+    "segments.csv": "8a9bd6beb4acb266e3c018c18a8ba7b3256c21dd26f87bc79a2951bc4f1a8602",
+    "manifest.json": "e9c7b1679b4bc3975b95da507cd640c0d0787c715830f98a753fbf51219a171a"
+  },
+  "records_hash": "96724256ea07de2902404790f699ab7face97b7710fd2ca960f888cd7af59a17",
+  "folds_hash": "ffd3607857c7c62f34daf33606e3162062e26e30730831ecb39f615c2b82d71b",
+  "model_config": {
+    "n_leads": 12,
+    "n_classes": 3,
+    "cnn_channels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "cnn_kernels": [
+      7,
+      5,
+      3,
+      3
+    ],
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "transformer_dropout": 0.2,
+    "fc_dropout": 0.3,
+    "patch_size": 16
+  },
+  "class_names": [
+    "LVOT",
+    "RVOT_cusp",
+    "RVOT_septal_freewall_other"
+  ],
+  "code": {
+    "__init__.py": "499d54647713358e194af444f029a67c364136edf8671e3b450cb9fa2d71e32e",
+    "__main__.py": "91e347a0235901f8d66c8477f20eda0631e5cb9010e3ffcec2b084c9fb3c2ea7",
+    "analysis.py": "63678fd1a560f85becd73e036e8cbbade15e8e1d7ccfc23378b4cfd8a7bbf838",
+    "common.py": "c185472f7fb2ac03464f3e6d4d8edbc4251341b12e934d144be95b76089f0a9d",
+    "data.py": "4f3a93efab6536e480241b5d2c55abac4b0a5f46fbaf38309a6b666505e0305e",
+    "experiment.py": "82a244a33884d71cc8a5b70beb12f2d8e777950cb7f07e74897c5572e746f5d4",
+    "explain.py": "924fae7430c188c45cbe6b020fb962dceddfbb8992eaaaa13f0e8d2bec4041b6",
+    "gan_final.py": "f5a0dee6715737bbe687993555f59b0a46be88767ff38f9ace9a25f6da6f8b07"
+  },
+  "runtime": {
+    "python": "3.14.2",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "torch": "2.12.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "shap": "0.52.0",
+    "PyYAML": "6.0.3"
+  },
+  "historical_test_previously_observed": true,
+  "pretrained_weights_used": false,
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2"
+}

@@ -1,0 +1,21 @@
+# V14 — model biner khusus LVOT (0) vs RVOT (1 = RVOT cusp + RVOT septal/free-wall/other).
+# Pertanyaan: apakah melatih langsung 2 kelas lebih baik daripada menggabung probabilitas
+# model 3 kelas V13? Jawaban HANYA dari CV development (test 59 pasien tidak dibaca).
+# Fold, seed efektif, resep, scaler dan skenario (baseline + fine-tuning terpilih V13) identik
+# dengan V13 sehingga setiap fold x seed berpasangan langsung.
+source_v13_run: 20261008_proposal_baseline_vs_finetune_v13
+models: [encoder, patchtst, hierarchical]
+arms: [baseline, finetune]
+folds: [1, 2, 3, 4, 5]
+cv_seeds: [42, 43, 44]
+label_map: {0: 0, 1: 1, 2: 1}
+class_names: [LVOT, RVOT]
+evaluation_segment_chunk: 16
+minimum_free_gib: 1.5
+decision:
+  metric: patient_macro_f1_binary_threshold_0.5
+  test: wilcoxon_two_sided_paired_fold_seed
+  multiple_comparison: holm_over_6_model_arm
+  alpha: 0.05
+  rule: per model, fine-tuning arm; pakai V14 bila mean selisih F1 > 0 dan p Holm < 0,05, selain itu tetap V13 digabung
+test_pool_read: false

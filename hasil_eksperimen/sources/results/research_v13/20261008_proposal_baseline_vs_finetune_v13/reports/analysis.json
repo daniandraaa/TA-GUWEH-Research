@@ -1,0 +1,21 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "files": [
+    "RINGKASAN_V13.md",
+    "bab4_tabel_test.csv",
+    "cv_baseline_vs_finetune.png",
+    "cv_cases.csv",
+    "cv_summary.csv",
+    "fold_inventory.csv",
+    "grid_search_heatmap.png",
+    "preparation.json",
+    "stat_cv_friedman_models.csv",
+    "stat_cv_wilcoxon.csv",
+    "stat_test_mcnemar_bootstrap.csv",
+    "test_all_seeds.csv",
+    "test_baseline_vs_finetune.png",
+    "test_confusion_matrices.png",
+    "test_per_class.csv",
+    "test_recall_per_class.png"
+  ]
+}

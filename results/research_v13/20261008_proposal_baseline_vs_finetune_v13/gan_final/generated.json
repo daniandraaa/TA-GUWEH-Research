@@ -1,0 +1,14 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "generator_sha256": "b428b3f47654545dce751ae1d73d06fc3071c7c5a6f175cdf9b041cd55266a79",
+  "shape": [
+    192,
+    12,
+    5000
+  ],
+  "files": {
+    "synthetic.npy": "e60a85e3d94eb42c8a786a15588f94175d031416fa9f299ecc8c84d8d573c446",
+    "synthetic_labels.csv": "b8c6d0f7c7cd8698bae4789bee24174954d34bfeb40ea3fa831ecbb162cf73b4"
+  },
+  "record_hash": "bdde7e9442b8acd93f295e9e71d37072b67d6b39de761e98f6cb22d577d1a64e"
+}

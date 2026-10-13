@@ -1,0 +1,40 @@
+{
+  "choices": [
+    {
+      "arm": "weighted_real",
+      "model": "encoder",
+      "scenario": "S01",
+      "f1_mean": 0.6737648644976622,
+      "f1_std": 0.027449776426521723,
+      "epochs": 10
+    },
+    {
+      "arm": "weighted_real",
+      "model": "patchtst",
+      "scenario": "S05",
+      "f1_mean": 0.6711860496266281,
+      "f1_std": 0.0785260216862729,
+      "epochs": 15
+    },
+    {
+      "arm": "real_only",
+      "model": "hierarchical",
+      "scenario": "S01",
+      "f1_mean": 0.6598296090949979,
+      "f1_std": 0.06426146114365569,
+      "epochs": 8
+    }
+  ],
+  "primary": {
+    "arm": "weighted_real",
+    "model": "encoder",
+    "scenario": "S01",
+    "f1_mean": 0.6737648644976622,
+    "f1_std": 0.027449776426521723,
+    "epochs": 10
+  },
+  "primary_seed": 42,
+  "test_used_for_selection": false,
+  "selection_source": "development CV",
+  "cv_estimate_is_selection_optimistic": true
+}

@@ -1,0 +1,49 @@
+source_v5_run: 20261003_window_bag_ablation_v5
+folds: [1, 2, 3, 4, 5]
+sampling_rate: 2000
+segment_length: 5000
+classes: 3
+gan_seed: 42
+inner_reference_fraction: 0.20
+inner_split_seed: 6042
+minimum_free_gib: 2.0
+reference_windows_per_patient: 3
+amplitude_scale: median_inner_fit_patient_global_rms
+clipping: false
+generator:
+  latent_dim: 64
+  embedding_dim: 16
+  base_channels: 64
+  independent_leads: [I, II, V1, V2, V3, V4, V5, V6]
+  output: linear_eight_leads_then_algebraic_twelve_leads
+  normalization: GroupNorm
+discriminator: spectral_normalized_projection_hinge
+training:
+  epochs: 100
+  batch_size: 16
+  draws_per_fit_patient_per_epoch: 4
+  sampling: uniform_class_then_uniform_patient_then_uniform_window
+  learning_rate: 0.0001
+  betas: [0.0, 0.9]
+  discriminator_steps_per_generator_step: 1
+  gradient_clip: 5.0
+  auxiliary_moment_weight: 1.0
+  checkpoint_selection: fixed_last_epoch_no_classifier_scores
+generation:
+  per_class: 64
+  batch_size: 16
+  seed_offset: 30000
+quality_gate:
+  role: engineering_screen_not_clinical_validation
+  normalized_wasserstein_floor: 0.5
+  real_reference_distance_multiplier: 2.0
+  max_failed_feature_fraction_per_family_and_class: 0.25
+  minimum_distinct_sample_fraction: 0.95
+  near_copy_relative_rmse: 0.01
+  limb_residual_upper_floor: 0.05
+  limb_residual_reference_multiplier: 2.0
+test_signals_enabled: false
+outer_validation_signals_enabled: false
+classifier_training_enabled: false
+full_fold_training_requires_fold1_quality_pass: true
+interpretation: exploratory_development_pilot_not_nested_performance_estimate

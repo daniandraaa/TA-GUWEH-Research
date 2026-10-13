@@ -1,0 +1,98 @@
+{
+  "experiment_hash": "005040f0701fcbc759ef1eb7662699f7171b04c8446775854484743140717ea1",
+  "device": "mps",
+  "passed": true,
+  "cases": [
+    {
+      "model": "encoder",
+      "arm": "baseline",
+      "scenario": "baseline",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "output_classes": 2,
+      "gan_replacements_in_batch": 0,
+      "loss": 0.7210695147514343,
+      "seconds": 1.765292625001166
+    },
+    {
+      "model": "encoder",
+      "arm": "finetune",
+      "scenario": "G02",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "output_classes": 2,
+      "gan_replacements_in_batch": 8,
+      "loss": 0.7126935720443726,
+      "seconds": 0.26912841701414436
+    },
+    {
+      "model": "patchtst",
+      "arm": "baseline",
+      "scenario": "baseline",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "output_classes": 2,
+      "gan_replacements_in_batch": 0,
+      "loss": 0.6983321905136108,
+      "seconds": 0.19328254100400954
+    },
+    {
+      "model": "patchtst",
+      "arm": "finetune",
+      "scenario": "G02",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "output_classes": 2,
+      "gan_replacements_in_batch": 8,
+      "loss": 0.6949428915977478,
+      "seconds": 0.11581133300205693
+    },
+    {
+      "model": "hierarchical",
+      "arm": "baseline",
+      "scenario": "baseline",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "output_classes": 2,
+      "gan_replacements_in_batch": 0,
+      "loss": 0.7087094783782959,
+      "seconds": 0.2916788750444539
+    },
+    {
+      "model": "hierarchical",
+      "arm": "finetune",
+      "scenario": "G03",
+      "batch_shape": [
+        16,
+        4,
+        12,
+        5000
+      ],
+      "output_classes": 2,
+      "gan_replacements_in_batch": 16,
+      "loss": 0.7216036319732666,
+      "seconds": 0.7869727920042351
+    }
+  ],
+  "weights_discarded": true
+}

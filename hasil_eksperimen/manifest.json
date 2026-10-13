@@ -1,0 +1,358 @@
+{
+  "created_utc": "2026-10-13T10:25:33.607034+00:00",
+  "source_endpoint": "daniandraaa@100.90.237.91",
+  "remote_operations": "read-only Python filesystem/stat/hash/stream; no model execution or remote writes",
+  "scope": "44 original aggregate sources plus 5 authorized sanitized/canonical dataset files",
+  "patient_id_policy": "original hospital IDs removed; anonymous IDs only dataset; no mapping exported",
+  "rights": "user asserted permission for deidentified supervisor sharing; original license/consent/ethics not independently verified",
+  "files": [
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/docs/revisi/PRAREGISTRASI_V14_BINER_20261008.md",
+      "source_mtime_utc": "2026-10-08T06:24:00.614863+00:00",
+      "sha256": "133724b5040d2dce61174c875fe1b36e3467e5c175ca3b92e2dc5e1adbc77a95",
+      "local_path": "sources/docs/revisi/PRAREGISTRASI_V14_BINER_20261008.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/docs/revisi/PANDUAN_MANUAL_V13.md",
+      "source_mtime_utc": "2026-10-07T04:58:03.562876+00:00",
+      "sha256": "afe0b8d03e02a0f00deb095e797490d8034a3c3045aeddf4687f3defe5ad0c5f",
+      "local_path": "sources/docs/revisi/PANDUAN_MANUAL_V13.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/docs/revisi/PRAREGISTRASI_PEMBANDING_KLINIS_V14_20261008.md",
+      "source_mtime_utc": "2026-10-08T06:26:33.973165+00:00",
+      "sha256": "78eb5667c0c3f8f2de2edf7f8e6ea57757f1af1ed9acef6305d61249af91eeef",
+      "local_path": "sources/docs/revisi/PRAREGISTRASI_PEMBANDING_KLINIS_V14_20261008.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/docs/revisi/PRAREGISTRASI_ANALISIS_SEKUNDER_V13.md",
+      "source_mtime_utc": "2026-10-07T04:58:03.504353+00:00",
+      "sha256": "950bb5924e4f548a4e06b8ce48ba927d59236b9bee1150cea25a17c52c006775",
+      "local_path": "sources/docs/revisi/PRAREGISTRASI_ANALISIS_SEKUNDER_V13.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/docs/revisi/PRAREGISTRASI_V14_FINAL_TEST_20261008.md",
+      "source_mtime_utc": "2026-10-08T08:59:58.312684+00:00",
+      "sha256": "9ff7e63efce5955a5336c298341c49801ef3320254a7511d551acabd3207e105",
+      "local_path": "sources/docs/revisi/PRAREGISTRASI_V14_FINAL_TEST_20261008.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/protocol.json",
+      "source_mtime_utc": "2026-10-07T04:43:24.445873+00:00",
+      "sha256": "bc675571a76508b7f3c544ef9eeff7b9fb30eadc49f2733f8ab4c426127d5841",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/protocol.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/RINGKASAN_V13.md",
+      "source_mtime_utc": "2026-10-07T17:53:51.737660+00:00",
+      "sha256": "d4805d0e0d23fa8101693f0c30d584e7d4712a885274df73ceffbb8d1e94e596",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/RINGKASAN_V13.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/preparation.json",
+      "source_mtime_utc": "2026-10-07T04:43:27.403546+00:00",
+      "sha256": "a26f6d51c6cf8ebfd777713faf3620d0104b886c2ab350515984d882f4615aa5",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/preparation.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/fold_inventory.csv",
+      "source_mtime_utc": "2026-10-07T04:43:27.392030+00:00",
+      "sha256": "188eed8f6d80ed4916eff82e141ffa90e7c09eebc27c23c6103fb5f009091a79",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/fold_inventory.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/stat_cv_friedman_models.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.518023+00:00",
+      "sha256": "23cad04d59b961ec8c7c57305bbb76923b741dd4bba9fa185b0bb1cac27c6634",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/stat_cv_friedman_models.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/stat_cv_wilcoxon.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.517797+00:00",
+      "sha256": "9997732ea11f6491f5f1ff3fdd5e2b05d34efbe7001ed19e4e2b64e318f9c021",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/stat_cv_wilcoxon.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/test_per_class.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.520298+00:00",
+      "sha256": "359ce1364c626e2a4167888ad80856d008f24af719d6176c9aa1019836f8fca1",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/test_per_class.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/cv_cases.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.502953+00:00",
+      "sha256": "0a8c801d0cdcbfdea4d641fff5d6caf9683f8fa67ac8a69ef1bbbb3e8241c8ad",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/cv_cases.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/analysis.json",
+      "source_mtime_utc": "2026-10-07T17:53:51.737900+00:00",
+      "sha256": "08542f95e7b9e1e441863bfff09f159c52a40d831d339e2a6856c4b3f4fd91d9",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/analysis.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/stat_test_mcnemar_bootstrap.csv",
+      "source_mtime_utc": "2026-10-07T17:53:50.767480+00:00",
+      "sha256": "5d08f9169658e362932561d6efc52678c77fed41d0c2ffdb1294674463d8eb4e",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/stat_test_mcnemar_bootstrap.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/cv_summary.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.505192+00:00",
+      "sha256": "55f0b23c2f4f3b0242e4cfe8db18303be8094fa36cb9919e5e609ff9f5a57d3f",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/cv_summary.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/test_all_seeds.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.519916+00:00",
+      "sha256": "9d4c41dee97642e847b8fcdfb78f9994e9e81e713797a8a778a39171614492c2",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/test_all_seeds.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/bab4_tabel_test.csv",
+      "source_mtime_utc": "2026-10-07T17:53:36.525312+00:00",
+      "sha256": "627fe3016a7765f58cd340c46f197dbd2a467412b2c3e883d538f0675fd49084",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports/bab4_tabel_test.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_lvot_rvot_cv_v14/protocol.json",
+      "source_mtime_utc": "2026-10-08T06:24:03.809347+00:00",
+      "sha256": "6a1e743f34e41e588d764382211a0f222bd802689ff63221b9420eb88598285a",
+      "local_path": "sources/results/research_v14/20261008_binary_lvot_rvot_cv_v14/protocol.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/preparation.json",
+      "source_mtime_utc": "2026-10-08T06:24:06.313224+00:00",
+      "sha256": "46f298fbdb95711fcf73162d36db2a42ef7ff2c2c36756a7c0eb4a2121ff31fc",
+      "local_path": "sources/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/preparation.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/cv_paired_cases.csv",
+      "source_mtime_utc": "2026-10-08T08:45:17.775450+00:00",
+      "sha256": "69d312069a25e808172bf7045f952ecb889ef074cdc1380bc265b1c076d0407a",
+      "local_path": "sources/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/cv_paired_cases.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/cv_comparison.csv",
+      "source_mtime_utc": "2026-10-08T08:45:17.784416+00:00",
+      "sha256": "5a14699766d8055b7cb18c7d252dbe66c67ee2aed0d83ad9066862059f93f878",
+      "local_path": "sources/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/cv_comparison.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/decision.json",
+      "source_mtime_utc": "2026-10-08T08:45:17.785471+00:00",
+      "sha256": "2fc7861f7b298bbafd616e33989540cd8293f3ce4aefa24d5b0b862fb0f2d6c9",
+      "local_path": "sources/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/decision.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/RINGKASAN_V14.md",
+      "source_mtime_utc": "2026-10-08T08:45:18.325423+00:00",
+      "sha256": "466beab6bf8ce44bbeed927ca1a0fd73bce59895b156b0b92279c113c014239b",
+      "local_path": "sources/results/research_v14/20261008_binary_lvot_rvot_cv_v14/reports/RINGKASAN_V14.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/protocol.json",
+      "source_mtime_utc": "2026-10-08T09:00:09.194461+00:00",
+      "sha256": "48e7fe90a891e66e1617595ecc1fad6c456c828be8e19b64c92451d6fa3e6c9c",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/protocol.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/paired_test_v13_vs_v14.json",
+      "source_mtime_utc": "2026-10-08T09:01:30.404874+00:00",
+      "sha256": "64a6bb100ada692b362ab280214ffc117cf13097454d7ee7d2660fb84889edc0",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/paired_test_v13_vs_v14.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/test_v13_vs_v14_patchtst.csv",
+      "source_mtime_utc": "2026-10-08T09:01:30.404165+00:00",
+      "sha256": "33b839d9fb858690208195dbae97c03dd1a7ab00945c4828aa372f52daa13801",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/test_v13_vs_v14_patchtst.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/decision_curve.csv",
+      "source_mtime_utc": "2026-10-08T09:01:30.404749+00:00",
+      "sha256": "54deb93445315e1b3a50f0fc1341e87c2f682023caa83413d31589608cc43fbd",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/decision_curve.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/auc_v14_minus_rule.csv",
+      "source_mtime_utc": "2026-10-08T09:01:30.404439+00:00",
+      "sha256": "80b6c4159e74fb6911f164980d4d5c602b4a17d8c157d4725317a7dd99e11a19",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/reports/auc_v14_minus_rule.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/test_secondary_all.csv",
+      "source_mtime_utc": "2026-10-07T17:55:49.653811+00:00",
+      "sha256": "759b57950e04098ea55b96b1ec9896374f327e1b05b460c1a8030ca9c4e9559e",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/test_secondary_all.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/bab4_tabel_sekunder.csv",
+      "source_mtime_utc": "2026-10-07T17:55:49.662667+00:00",
+      "sha256": "0907c8df30b1214799d5fd559ccae4f202e8c25afae2d12f99da41a01564f967",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/bab4_tabel_sekunder.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/stat_sekunder_ensemble.csv",
+      "source_mtime_utc": "2026-10-07T17:56:17.574998+00:00",
+      "sha256": "239f5bc92fc6bbbb21113ed9de2a062ca268191cb4ca85228f4b563c8d9f76ee",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/stat_sekunder_ensemble.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/binary_majority_baseline.json",
+      "source_mtime_utc": "2026-10-07T17:55:49.654574+00:00",
+      "sha256": "e9b4b05d3ef66cc391bcdc68d41fc5513608a4bd3e5f9366f9a9e3f533eeabe6",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/binary_majority_baseline.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/cv_binary_cases.csv",
+      "source_mtime_utc": "2026-10-07T17:55:49.480973+00:00",
+      "sha256": "afce3709634da7a48f2846ce95512070d565a8142beee6a5b014208c575ee5d3",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/cv_binary_cases.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/manifest.json",
+      "source_mtime_utc": "2026-10-07T17:56:18.053440+00:00",
+      "sha256": "d4df5ef955ad94af8eaf99c9bed5b74d45c1e3ceede4b63a635a4bbb2a40a4ef",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/manifest.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/RINGKASAN_SEKUNDER_V13.md",
+      "source_mtime_utc": "2026-10-07T17:56:18.052124+00:00",
+      "sha256": "bc683c4ac4ee6dbae3dcd311fc503e354a6f9087b47830fa25868bb7e75092fd",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/RINGKASAN_SEKUNDER_V13.md",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/cv_binary_summary.csv",
+      "source_mtime_utc": "2026-10-07T17:55:49.481305+00:00",
+      "sha256": "c5efbae7180aae873b6965a562e702d22b8d15eb7addb35a23f871c9c5a122e4",
+      "local_path": "sources/results/research_v13/20261008_proposal_baseline_vs_finetune_v13/reports_secondary/cv_binary_summary.csv",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/research_v13/protocol.yaml",
+      "source_mtime_utc": "2026-10-07T04:16:26.299755+00:00",
+      "sha256": "c3274dbc34449dd2d75ceaddd646e5da33b934325c9f24ccbf5d065b57ed4437",
+      "local_path": "sources/research_v13/protocol.yaml",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/research_v14/protocol.yaml",
+      "source_mtime_utc": "2026-10-08T06:22:22.771619+00:00",
+      "sha256": "963d16ae807a09ddd74eaf6b1272da0ba198cb8df05f1136af0215747efa8a9f",
+      "local_path": "sources/research_v14/protocol.yaml",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_43/metrics.json",
+      "source_mtime_utc": "2026-10-08T09:01:06.153445+00:00",
+      "sha256": "633491f9b5a4fe5cb4a53202bc7c9c83d46b0b3487065f04b142b7e68c004f05",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_43/metrics.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_44/metrics.json",
+      "source_mtime_utc": "2026-10-08T09:01:06.616970+00:00",
+      "sha256": "ec0894a93ca19c5202850f5a405e389d8e36999b6341619a086387b59bdedef1",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_44/metrics.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_45/metrics.json",
+      "source_mtime_utc": "2026-10-08T09:01:07.088943+00:00",
+      "sha256": "78aad986a7fe859a16639eb294961aa1e2a1eff5e6f5e33a157b1932feff289a",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_45/metrics.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_42/metrics.json",
+      "source_mtime_utc": "2026-10-08T09:01:05.687437+00:00",
+      "sha256": "5ff636252f9e1ffaac462f50977ca96999be97ec894fbc4e8888a2de14b8db17",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_42/metrics.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_46/metrics.json",
+      "source_mtime_utc": "2026-10-08T09:01:07.559157+00:00",
+      "sha256": "7e24978f95c8e0519957d91e03b7a21881c1073d462b46dd4010fac53563be9d",
+      "local_path": "sources/results/research_v14/20261008_binary_patchtst_final_test_v14/test/seed_46/metrics.json",
+      "privacy_review": "aggregate metrics/config/protocol only; no patient-level rows"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v2/20260930_anatomy_fs2000_v2/data/development/segments.csv",
+      "source_mtime_utc": "2026-09-30T03:21:25.578084+00:00",
+      "source_sha256": "8a9bd6beb4acb266e3c018c18a8ba7b3256c21dd26f87bc79a2951bc4f1a8602",
+      "sha256": "61cd08a1daf87c118740b8f9504467e7011248fb28941b3b9706a0c8aecac276",
+      "local_path": "dataset/development/segments.csv",
+      "privacy_review": "hospital IDs replaced with ANON; mapping NOT exported"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v2/20260930_anatomy_fs2000_v2/data/test/segments.csv",
+      "source_mtime_utc": "2026-09-30T20:10:37.739700+00:00",
+      "source_sha256": "491f81bd51a31770de21329f65e3e1beb82454ad9e5113de9967eb80687a8bc2",
+      "sha256": "cd5dc556758a02b4de42d187a5388acefac5b20b2d00a718ff1bbdac69111075",
+      "local_path": "dataset/test/segments.csv",
+      "privacy_review": "hospital IDs replaced with ANON; mapping NOT exported"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v4/20261002_patient_mil_hybrids_v4/folds/manifest.json",
+      "source_mtime_utc": "2026-10-02T07:17:11.185553+00:00",
+      "source_sha256": "2075809fd9b8a0fd991807fe60d42ba31cee57bdd1efc8e2e454f1068badfd6f",
+      "sha256": "911b6c2310821d5210792a25aed2f01d88951f408c64eaf737d8b94ef85768d5",
+      "local_path": "dataset/folds.json",
+      "privacy_review": "hospital IDs replaced with ANON; mapping NOT exported"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v2/20260930_anatomy_fs2000_v2/data/development/X.npy",
+      "source_mtime_utc": "2026-09-30T03:21:25.566065+00:00",
+      "source_sha256": "c3291ca64555d8160f5bf98509ed79317061e59973f71e68d706ac4b61f0b96d",
+      "sha256": "c3291ca64555d8160f5bf98509ed79317061e59973f71e68d706ac4b61f0b96d",
+      "local_path": "dataset/development/X.npy",
+      "privacy_review": "waveform float32 only; no identifying headers"
+    },
+    {
+      "source_path": "/Users/daniandraaa/Desktop/TA GUWEH/results/research_v2/20260930_anatomy_fs2000_v2/data/test/X.npy",
+      "source_mtime_utc": "2026-09-30T20:10:37.735980+00:00",
+      "source_sha256": "7906dafe6c9a42390df3f92d52296a589bd492b09efa41b79444377dd129f4dd",
+      "sha256": "7906dafe6c9a42390df3f92d52296a589bd492b09efa41b79444377dd129f4dd",
+      "local_path": "dataset/test/X.npy",
+      "privacy_review": "waveform float32 only; no identifying headers"
+    }
+  ]
+}

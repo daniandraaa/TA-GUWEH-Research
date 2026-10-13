@@ -1,0 +1,258 @@
+{
+  "protocol": {
+    "source_run": "20260930_anatomy_fs2000_v2",
+    "arms": [
+      "window_segment",
+      "window_patient",
+      "r_candidate_segment",
+      "r_candidate_patient"
+    ],
+    "models": [
+      "encoder",
+      "patchtst",
+      "hierarchical"
+    ],
+    "classical_arms": [
+      "window_patient",
+      "r_candidate_patient"
+    ],
+    "final_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "primary_seed": 42,
+    "primary_family": "neural",
+    "endpoint": "patient_level_three_anatomical_groups",
+    "minimum_free_gib": 2.0,
+    "retain_cv_checkpoints": false,
+    "class_weighting": "inverse_patient_class_frequency_training_fold",
+    "aggregation": "arithmetic_mean_segment_probabilities_per_patient",
+    "draws_per_epoch": "number_of_training_2p5s_windows_same_across_all_four_arms",
+    "sampling_replacement": true,
+    "patch_model": "CNN_patch_transformer_with_zero_padded_tail_and_valid_length_pooling",
+    "patch_is_original_channel_independent_PatchTST": false,
+    "candidate": {
+      "fs": 2000,
+      "before_seconds": 0.2,
+      "after_seconds": 0.3,
+      "bandpass_hz": [
+        5.0,
+        25.0
+      ],
+      "energy_smooth_seconds": 0.08,
+      "refractory_seconds": 0.25,
+      "refinement_seconds": 0.08,
+      "consensus_seconds": 0.05,
+      "threshold_mad": 3.0,
+      "leads": [
+        "II",
+        "V2",
+        "V5"
+      ],
+      "maximum_per_patient": 64,
+      "fallback": "evenly_spaced_500ms_windows_when_no_complete_consensus_candidate",
+      "pvc_verified": false
+    },
+    "classical": {
+      "n_estimators": 500,
+      "max_depth": 12,
+      "max_features": [
+        0.3,
+        0.7,
+        1.0
+      ],
+      "min_samples_leaf": [
+        1,
+        2,
+        4
+      ],
+      "feature_version": "per_lead_statistics_and_bandpower_v1",
+      "n_jobs": 2
+    }
+  },
+  "config": {
+    "protocol_version": 1,
+    "seed": 42,
+    "n_folds": 5,
+    "segment_length": 5000,
+    "overlap": 0.5,
+    "sampling_rate": 2000,
+    "sampling_rate_source": "Asumsi kode EDA historis; sumber dataset belum memverifikasi frekuensi.",
+    "holdout_status": "historical_previously_evaluated",
+    "class_names": [
+      "LVOT",
+      "RVOT_cusp",
+      "RVOT_septal_freewall_other"
+    ],
+    "models": [
+      "encoder",
+      "patchtst",
+      "hierarchical"
+    ],
+    "model": {
+      "n_leads": 12,
+      "n_classes": 3,
+      "cnn_channels": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "cnn_kernels": [
+        7,
+        5,
+        3,
+        3
+      ],
+      "transformer_heads": 4,
+      "transformer_layers": 2,
+      "transformer_dropout": 0.2,
+      "fc_dropout": 0.3,
+      "patch_size": 16
+    },
+    "training": {
+      "optimizer": "Adam",
+      "weight_decay": 0.0001,
+      "epochs": 100,
+      "patience": 10,
+      "scheduler_t_max": 100,
+      "minimum_lr": 1e-06,
+      "gradient_clip": 1.0,
+      "label_smoothing": 0.0,
+      "class_weighting": "none",
+      "eval_batch_size": 64,
+      "drop_last": false
+    },
+    "baseline": {
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "weight_decay": 0.0001,
+      "epochs": 50,
+      "patience": 10,
+      "scheduler_t_max": 50,
+      "minimum_lr": 0.0,
+      "gradient_clip": 1.0,
+      "label_smoothing": 0.0,
+      "class_weighting": "inverse_frequency_training_fold"
+    },
+    "gan": {
+      "epochs": 50,
+      "batch_size": 64,
+      "latent_dim": 100,
+      "embed_dim": 50,
+      "learning_rate": 0.0002,
+      "betas": [
+        0.5,
+        0.999
+      ],
+      "scale": 5.0,
+      "real_target": 0.9,
+      "fake_target": 0.1,
+      "balance_target": "largest_training_class"
+    },
+    "selection": {
+      "metric": "patient_macro_f1",
+      "tie_break": [
+        "lower_sample_std_f1",
+        "scenario_id"
+      ],
+      "final_epochs": "median_best_epoch",
+      "primary_final_seed": 42,
+      "final_seeds": [
+        42
+      ],
+      "test_selection_allowed": false
+    },
+    "shap": {
+      "background_segments": 30,
+      "explain_segments": 30,
+      "integration_samples": 100,
+      "seed": 42
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S01",
+      "learning_rate": 0.0001,
+      "batch_size": 16
+    },
+    {
+      "id": "S02",
+      "learning_rate": 0.0001,
+      "batch_size": 32
+    },
+    {
+      "id": "S03",
+      "learning_rate": 0.0001,
+      "batch_size": 64
+    },
+    {
+      "id": "S04",
+      "learning_rate": 0.0005,
+      "batch_size": 16
+    },
+    {
+      "id": "S05",
+      "learning_rate": 0.0005,
+      "batch_size": 32
+    },
+    {
+      "id": "S06",
+      "learning_rate": 0.0005,
+      "batch_size": 64
+    },
+    {
+      "id": "S07",
+      "learning_rate": 0.001,
+      "batch_size": 16
+    },
+    {
+      "id": "S08",
+      "learning_rate": 0.001,
+      "batch_size": 32
+    },
+    {
+      "id": "S09",
+      "learning_rate": 0.001,
+      "batch_size": 64
+    }
+  ],
+  "source_hash": "5c61cfca1614f22030b69cef6b6575093542526b01f57d2bc24e3edd8c6b37d3",
+  "patient_metadata_hash": "96724256ea07de2902404790f699ab7face97b7710fd2ca960f888cd7af59a17",
+  "fold_manifest_hash": "ffd3607857c7c62f34daf33606e3162062e26e30730831ecb39f615c2b82d71b",
+  "source_development_cache": {
+    "X.npy": {
+      "bytes": 545760128,
+      "mtime_ns": 1790738485566065261
+    },
+    "manifest.json": {
+      "bytes": 75068,
+      "mtime_ns": 1790738485578516818
+    },
+    "segments.csv": {
+      "bytes": 44384,
+      "mtime_ns": 1790738485578083526
+    }
+  },
+  "code": {
+    "__init__.py": "2ca149736161569edf007b0bc770932fbf1764c883b46d29a69f73eb9976b75c",
+    "__main__.py": "76c08eba22578138191d8c0a977942768fddc345aa23d221d504fbd08a543e98",
+    "benchmark.py": "ff06b0d3739cc48115d0672d0a172975a69ea385ea9e6cb152eda5fb087dc8da",
+    "candidates.py": "09882aa23e0f614da06d789a32416606b31a1989e34d7450efeaf633cee1d6e4",
+    "classical.py": "1fb6c1d468e4e4c6504e7eaeeeb2de71b77cda54aa59a04442f93976ce9a7331",
+    "common.py": "8ec9586154f98df622c66b27731fa677538a1d8107eb348e6b8eaa9f026b523d",
+    "data.py": "9c920fa019bb489a7e8d68fc57c855b2ff6fd71bdf7fc85dc5dfae29dfed7307",
+    "experiment.py": "08fdd3038e26df9de483065b8c3a9031ed84ffdbc933e62bb8bae48b187b5907",
+    "models.py": "878131e54c34f0c147cfe3bef5115b02852c48eff2521f32dce4f1c60b01b93b",
+    "reporting.py": "5f7074875da9fbd3ade6024d07fd442eb406a2acb7f12d2936f7598520e7f6a4",
+    "sampling.py": "6be228cefb23b6190f93774e308eb69729af20c1c66dc72eb31c485819992234"
+  },
+  "experiment_hash": "d93854c0b53937695ed86076bdc36249e7d12799796c5df9b7717a9af49d4dfb",
+  "test_role": "historical_exploratory_not_external",
+  "expert_ecg_review_available": false,
+  "candidate_pvc_verified": false
+}

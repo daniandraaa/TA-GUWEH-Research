@@ -1,0 +1,13 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "development_patients": 230,
+  "development_windows": 2274,
+  "class_patients": {
+    "LVOT": 57,
+    "RVOT_cusp": 103,
+    "RVOT_septal_freewall_other": 70
+  },
+  "cv_fits_expected": 450,
+  "final_fits_expected": 30,
+  "test_signals_read": false
+}

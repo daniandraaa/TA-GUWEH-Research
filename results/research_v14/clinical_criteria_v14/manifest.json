@@ -1,0 +1,16 @@
+{
+  "code": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "clinical.py": "e2144c5d51e2a263097f66d9256ace116cb610a5bf27a52edd92abdfbec5bab4"
+  },
+  "preregistration_sha256": "78eb5667c0c3f8f2de2edf7f8e6ea57757f1af1ed9acef6305d61249af91eeef",
+  "source_v13_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "trained_parameters": 0,
+  "thresholds": {
+    "pvc_min_qrs_ms": 120.0,
+    "tz_lvot_max": 2,
+    "tz_rvot_min": 4,
+    "v2s_v3r_lvot_max": 1.5,
+    "v2_transition_ratio_lvot_min": 0.6
+  }
+}

@@ -1,0 +1,47 @@
+purpose: annotated_beat_identity_before_origin_input_revision
+incart_directory: external_data/incartdb_1.0.0
+external_directory: external_data/mitdb_1.0.0
+local_records: results/research_v4/20261002_patient_mil_hybrids_v4/data/patients.json
+local_raw_directory: PVCVTRawECGData
+local_sampling_rate: 2000
+classes: [normal_N, PVC_V_or_r, other_known_beat]
+arms: [morphology, morphology_rr]
+inverse_regularization_C: [0.01, 0.1, 1.0]
+pvc_thresholds: [0.5, 0.7, 0.9]
+folds: 5
+seed: 20261007
+maximum_iterations: 600
+training_cap_per_group_class: 600
+training_weight: equal_source_group_then_equal_present_class_then_equal_beat_and_lead
+inner_selection: end_to_end_PVC_F1_then_precision_then_smaller_C_then_higher_threshold
+deployment_selection: best_mean_outer_PVC_F1_arm_then_morphology_on_tie
+deployment_parameters: joint_mode_of_inner_C_threshold_then_smaller_C_higher_threshold
+minimum_free_gib: 3.0
+crop_before_seconds: 0.3
+crop_after_seconds: 0.5
+feature_filter_hz: [0.5, 40.0]
+feature_samples: 64
+preferred_feature_leads: [II, V1]
+mit_preferred_feature_leads: [MLII, V1]
+matching_tolerance_seconds: 0.1
+candidate:
+  bandpass_hz: [5.0, 25.0]
+  energy_smooth_seconds: 0.08
+  refractory_seconds: 0.25
+  refinement_seconds: 0.08
+  consensus_seconds: 0.05
+  threshold_mad: 3.0
+external_gate:
+  minimum_PVC_precision: 0.8
+  minimum_PVC_recall: 0.8
+  minimum_PVC_F1: 0.8
+  minimum_normal_N_precision: 0.8
+  minimum_normal_N_reference_recall: 0.25
+  normal_N_threshold: 0.9
+local_maximum_beats_per_type: 4
+local_label_status: pseudo_labels_not_clinically_verified
+local_exclusion_allowed: false
+origin_training_enabled: false
+historical_origin_test_enabled: false
+reference_anchor_training_enabled: false
+external_threshold_tuning_enabled: false

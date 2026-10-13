@@ -1,0 +1,28 @@
+{
+  "v14_cv_hash": "005040f0701fcbc759ef1eb7662699f7171b04c8446775854484743140717ea1",
+  "decision_hash": "24d182f7b390b754eb45cfabf592e8cfda1823ce2691183641947655964af83a",
+  "model": "patchtst",
+  "scenario": {
+    "id": "G02",
+    "learning_rate": 0.0001,
+    "batch_size": 32,
+    "augmentation": "gan"
+  },
+  "epochs": 5,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "development_cache": {
+    "X.npy": "c3291ca64555d8160f5bf98509ed79317061e59973f71e68d706ac4b61f0b96d",
+    "segments.csv": "8a9bd6beb4acb266e3c018c18a8ba7b3256c21dd26f87bc79a2951bc4f1a8602",
+    "manifest.json": "e9c7b1679b4bc3975b95da507cd640c0d0787c715830f98a753fbf51219a171a"
+  },
+  "code": {
+    "__init__.py": "715005fc098c82f0745d691774dd5db6451a1dcb6eb40068479ef36b4906db2c",
+    "run.py": "28a0cf534ddb64ea2d8b608a5649b1f1dd13225b2a72bd694cc8235a79ae5ff8"
+  }
+}

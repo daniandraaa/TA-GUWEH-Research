@@ -1,0 +1,11 @@
+{
+  "case_hash": "af21fb06fc0bcfdccc71103f162f2548fe44d5f08ea00bde2091dda27e46ed0a",
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "test_cache": {
+    "X.npy": "7906dafe6c9a42390df3f92d52296a589bd492b09efa41b79444377dd129f4dd",
+    "segments.csv": "491f81bd51a31770de21329f65e3e1beb82454ad9e5113de9967eb80687a8bc2",
+    "manifest.json": "bccaee825c5b78d63301c436937e88709cd693a1b5cdff2e1f6db0f0e63df168"
+  },
+  "final_model_sha256": "385af2f4da8e1cf51b1e6a138a1a6c77ff9f3ad669b2c19205ed469efcc2742d",
+  "selection_hash": "ae0d28b8f2ceaaaed2d716da6e36ef8a932fec1a280175fc8d2360c03a853fbe"
+}

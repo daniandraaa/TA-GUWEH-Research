@@ -1,0 +1,9 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "code": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "secondary.py": "f0c8ea5d725c2e1bc65719d97eb0800f288f17c340fb2b9ba90a8d36c871edf6"
+  },
+  "preregistration_sha256": "950bb5924e4f548a4e06b8ce48ba927d59236b9bee1150cea25a17c52c006775",
+  "threshold": 0.5
+}

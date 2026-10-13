@@ -1,0 +1,29 @@
+{
+  "experiment_hash": "005040f0701fcbc759ef1eb7662699f7171b04c8446775854484743140717ea1",
+  "rule": "per model, fine-tuning arm; pakai V14 bila mean selisih F1 > 0 dan p Holm < 0,05, selain itu tetap V13 digabung",
+  "source": "development CV only",
+  "test_read": false,
+  "choices": {
+    "encoder": {
+      "approach": "v13_collapsed",
+      "delta_f1": 0.026238814956738712,
+      "p_f1_holm": 0.08777465863751195,
+      "v13_collapsed_f1": 0.8641036313940306,
+      "v14_binary_f1": 0.8903424463507695
+    },
+    "patchtst": {
+      "approach": "v14_binary",
+      "delta_f1": 0.04394914363102685,
+      "p_f1_holm": 0.008813099797295021,
+      "v13_collapsed_f1": 0.855257946308375,
+      "v14_binary_f1": 0.8992070899394018
+    },
+    "hierarchical": {
+      "approach": "v13_collapsed",
+      "delta_f1": 0.026000441062455287,
+      "p_f1_holm": 0.05361393769263457,
+      "v13_collapsed_f1": 0.8546352867849539,
+      "v14_binary_f1": 0.8806357278474092
+    }
+  }
+}

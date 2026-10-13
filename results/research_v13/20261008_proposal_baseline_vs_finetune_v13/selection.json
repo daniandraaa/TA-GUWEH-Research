@@ -1,0 +1,62 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "choices": {
+    "encoder": {
+      "baseline": {
+        "scenario": "baseline",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "cv_f1_mean": 0.4914962312836434,
+        "cv_f1_sd": 0.05253994940398014,
+        "epochs": 4
+      },
+      "finetune": {
+        "scenario": "G02",
+        "learning_rate": 0.0001,
+        "batch_size": 32,
+        "cv_f1_mean": 0.6530690878154897,
+        "cv_f1_sd": 0.06253003363807075,
+        "epochs": 11
+      }
+    },
+    "patchtst": {
+      "baseline": {
+        "scenario": "baseline",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "cv_f1_mean": 0.5220425885752268,
+        "cv_f1_sd": 0.07509992964764216,
+        "epochs": 7
+      },
+      "finetune": {
+        "scenario": "G02",
+        "learning_rate": 0.0001,
+        "batch_size": 32,
+        "cv_f1_mean": 0.6403190053398726,
+        "cv_f1_sd": 0.05901912931708096,
+        "epochs": 14
+      }
+    },
+    "hierarchical": {
+      "baseline": {
+        "scenario": "baseline",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "cv_f1_mean": 0.5464845266129,
+        "cv_f1_sd": 0.05433352212357659,
+        "epochs": 10
+      },
+      "finetune": {
+        "scenario": "G03",
+        "learning_rate": 0.0001,
+        "batch_size": 64,
+        "cv_f1_mean": 0.6417545242090139,
+        "cv_f1_sd": 0.057883706884869275,
+        "epochs": 12
+      }
+    }
+  },
+  "selection_source": "development CV only (5 fold x 3 seed)",
+  "test_used_for_selection": false,
+  "cv_estimate_is_selection_optimistic_for_finetune": true
+}

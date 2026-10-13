@@ -1,0 +1,609 @@
+{
+  "pool": "test",
+  "patients": [
+    {
+      "hospital_id": "ANON0006",
+      "sublocation": "RVOTOther",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0009",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0012",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0015",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0022",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0024",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0028",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0035",
+      "sublocation": "RVOTOther",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0039",
+      "sublocation": "FreeWall",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0042",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0048",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0055",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0056",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0062",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0065",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0071",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0074",
+      "sublocation": "AMC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0073",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0078",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0083",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0084",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0089",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0091",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0099",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0100",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0110",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0113",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0114",
+      "sublocation": "LCC-RCC Ommisure",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0121",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0126",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0140",
+      "sublocation": "AMC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0142",
+      "sublocation": "AnteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0144",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0158",
+      "sublocation": "AC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0170",
+      "sublocation": "AMC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0174",
+      "sublocation": "RC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0177",
+      "sublocation": "FreeWall",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0178",
+      "sublocation": "RCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0183",
+      "sublocation": "FreeWall",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0188",
+      "sublocation": "FreeWall",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0189",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0200",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0203",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0205",
+      "sublocation": "AMC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0211",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0219",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0222",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0230",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0237",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0239",
+      "sublocation": "AC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0242",
+      "sublocation": "RC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0243",
+      "sublocation": "PosteriorSeptal",
+      "class_name": "RVOT_septal_freewall_other",
+      "label": 2,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "RVOT"
+    },
+    {
+      "hospital_id": "ANON0253",
+      "sublocation": "LCC",
+      "class_name": "LVOT",
+      "label": 0,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "LVOT"
+    },
+    {
+      "hospital_id": "ANON0256",
+      "sublocation": "RC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0258",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0263",
+      "sublocation": "AC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0266",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0276",
+      "sublocation": "LC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    },
+    {
+      "hospital_id": "ANON0287",
+      "sublocation": "RC",
+      "class_name": "RVOT_cusp",
+      "label": 1,
+      "historical_split": "test",
+      "pool": "test",
+      "class_name_historical": "Non-OT"
+    }
+  ],
+  "signal_sha256": {
+    "ANON0006.csv": "f4bd4cce3f8a2fabae01048c5645c6d0bb8043a2424abe08a9fc5966c1811473",
+    "ANON0009.csv": "95cd220072f8d2158118d35b808a2f10db1fe5acb81c6960d58257b39b8acdbb",
+    "ANON0012.csv": "ac3baf8c2f08e7141801745db86808043549260fda93b2806baf23cd53480947",
+    "ANON0015.csv": "36dfef56800f441d41c11515536f4f4cb451b35c5cd43539c34fd681866743cc",
+    "ANON0022.csv": "7fccce17257d7ab2140512a028c4af41870d9bb0b331008b589b4e022fc6be7d",
+    "ANON0024.csv": "127a73ceef39f2820ed9076dc5378bc4db2fc15a702b3828137e923ac10420d8",
+    "ANON0028.csv": "7b13dd549f86125ca67bfc6253cabae6fb3cada94603e22a9ace543bbfffafe1",
+    "ANON0035.csv": "28ba5228dc15001b9d53eea35eb0bc1251e2c7c317d1c360cbf1ab1437f0c02b",
+    "ANON0039.csv": "0385e5d6bca31af67ae90507421a04b16da09c7738d2ebeaa49c68359020fbde",
+    "ANON0042.csv": "70eb66f203a2c39b37e87cc5cf6efeba599491f30694f45b9b5502bdd812db67",
+    "ANON0048.csv": "0653ed2ffe08bc7dadd5593d26bc2ef4cfbb7065fd79c53d53a626b500f469bd",
+    "ANON0055.csv": "d9d2dee120edf7f645ac7475999d0b54c3b8b034c396476e135800a161e91314",
+    "ANON0056.csv": "9e43263638c38db50eb7f16fa5bbc1eecd4d075a4cb4f538af74077f73b34980",
+    "ANON0062.csv": "57e992f6fbeed1ce5f86146a6b057f43ac5d6430cb5ab0a1376a0b3d62c96ad3",
+    "ANON0065.csv": "811c86aa0bce9b60769a9bac29da86ebcc3e0a479c652003d62fb286365eafdf",
+    "ANON0071.csv": "27c234ba58ba5f7944d9ba9f4c23eb46c38eac2c4ab125704a32c62aeae34122",
+    "ANON0074.csv": "3b49cb9911f044b5418f66d23e67c5e81249d7940219c64bce8a243f41a2563d",
+    "ANON0073.csv": "3f73661c9060449a181084bd580ccf9185971b5ecd02fd5c9dbf9517ca5db9d7",
+    "ANON0078.csv": "26fe7a3ec5db11f5be6956165144ef36a967cec113b8ebab11755857c4c5ce1e",
+    "ANON0083.csv": "742f017e88f53ed5a32d40308ef8be122d51a9d57607dc216d7466cd108d6bd3",
+    "ANON0084.csv": "3d80352856f88dad4e6a3987aa481b3dfa5e050868688829e82e892edbeda7f3",
+    "ANON0089.csv": "169ad7042f995c5b4e3c74fe016e2118c9baf7ddefbf213be1c30859b193f669",
+    "ANON0091.csv": "7f4a7fb312bc1e0efb02b96819cbe5ac634c2ccd68a8361a02d7bb67793c05b8",
+    "ANON0099.csv": "1c65a80ae18e6e77dd9f314b1c8b3b9a0732920276ff1117857114a9420882c9",
+    "ANON0100.csv": "bcc8aa3efaeddade161e2f978b1baa1ab1dc787fe58d789942d71f20a863d90e",
+    "ANON0110.csv": "7692c6bf0544d7b3535b881ac935aba243711f2f697942d352f40647f9ddcb5f",
+    "ANON0113.csv": "a7fd0d99c40f413dee16de14a865df8437ce3533fe5db1c07df5beefdbb3a216",
+    "ANON0114.csv": "9d2b1d6ac030f17c3af76450995ff9681f5e0da5f45e57f7d12c29a72ec9513d",
+    "ANON0121.csv": "7dc66ead44c9fc96ec7393d18fef9b3b54d520a192cd285874519a803e0146cb",
+    "ANON0126.csv": "4bc0bf60845044f209e26678799c5010a91ac476325b128a3f85bb874209b756",
+    "ANON0140.csv": "40803f1aa387e54b37c2dafdd24d9df17d91dd3232de848c26a7dd5089071e07",
+    "ANON0142.csv": "858a6465ca1f4ccd012c0904088cac3caa7977bf401f64ce10365c2090ee902d",
+    "ANON0144.csv": "fee8f69eb8e3007cb5000a97355f13c71621dc3ed0121cc2adfc23c7d432fc71",
+    "ANON0158.csv": "950e70635c8ac87a3606ef400dbd29f2b3d9a1988766721353a2cf86c08bc9be",
+    "ANON0170.csv": "bdb9370d86f4f76efa0f35d732c87b0759dc04fc3ee2cee68679fc5083829f5a",
+    "ANON0174.csv": "48a6c135bb829f4928af7aa0da5a7a988de30a4d083154aefb329be744edd434",
+    "ANON0177.csv": "fc676ba73bcc96d959de788db6d7c55f4094d53da0f78c52a54a760a38630af8",
+    "ANON0178.csv": "bf1d0d136b4ac00225d81f3dae36d5db08fe4bc1f6f28becdbb8c4b1c69f0a18",
+    "ANON0183.csv": "eb3e9d022ef05e926a2c1408b954c2a143cf4e99baffb1658f04b4f7c04fa0c8",
+    "ANON0188.csv": "058499d6b48d9baef80e9abfc0be96133738b113ef02f650fd376c3049b3c0a3",
+    "ANON0189.csv": "65b1919e036ca1e0626b440d7b810ca9692204e7d7ef82b2b8027de78a011a80",
+    "ANON0200.csv": "0866c16454d11b90d83ac86a16c1c13dbb730bddda1a99d9dde802125cada135",
+    "ANON0203.csv": "c8ffaf11a14657113824b9d92723e43d71bd10eaaaf2bbf71878c82586a017d8",
+    "ANON0205.csv": "c7b98b9f52a3d30f41a35e2605ae7b80e4e173023669934c76aa527d7d991a05",
+    "ANON0211.csv": "a08af9def790e403498c2afb25eca511cfb258a3f1aa755c695b4500f02df04c",
+    "ANON0219.csv": "a2eb2461c00262cbf13fb96577ce07e4b7aa5b15b8ca0feff42c4bf8af87dc7c",
+    "ANON0222.csv": "5aeef8785e6c08b1e597bff63651a4f60e46c0d78483e92c3f98b1bf68ad68eb",
+    "ANON0230.csv": "56d87583024285d6578afb3b7d28fca58af342517fc7cb256bcaf65204893677",
+    "ANON0237.csv": "44334c0dac5feb496aa2b8b00fc00bd738f212f4d99f3b5c2617b12eec3f17f6",
+    "ANON0239.csv": "f5894925d089beb39e390fd0a3582cbe17908cbe82334f52f2ac9050f9da43ed",
+    "ANON0242.csv": "7175cd9ef0f2441e08d677b328f0a0e006e8f9cd2d0e42ac45570046793d7a93",
+    "ANON0243.csv": "4091da716f78b58b06419eadd59b4654f0953b760b0f05038b3b3c1d5e96977b",
+    "ANON0253.csv": "c91e28f84f40d96b50e4795ff4fcf1b6f695dbb28af51e8ee46d69bb2bb5d4a6",
+    "ANON0256.csv": "38cf1b7b3d2c885d9a7ba8c40abf78443a2127708f8a744c2dca3f701ed3f911",
+    "ANON0258.csv": "cdf222fd9c18455d8be3739eec5929ad2f9597203f019cc47167c38e1669a160",
+    "ANON0263.csv": "b139d9fcd3e1f67e04ddd8718b2fdd8e13c460bd3d0c70d15216767db9a1f26f",
+    "ANON0266.csv": "7415c0d5e25598169b121aa3b8b47ad603a51b4be97d0b2fa58efb3c1641ef31",
+    "ANON0276.csv": "6009b28bff5071ecf42f1451a7a1c0a279d5d570479814ee93e08ef7968c024e",
+    "ANON0287.csv": "05aee36dba5653b7d0c412b8e2ae5328a3b8d262a097f3f10f2032cfceaae0af"
+  },
+  "sampling_rate": 2000,
+  "preprocessing": {
+    "input": "PVCVTRawECGData",
+    "highpass_hz": 0.5,
+    "highpass_order": 4,
+    "implementation": "sosfiltfilt",
+    "wavelet": "coif5",
+    "level": 5,
+    "threshold": "per_level_SURE_soft"
+  },
+  "n_patients": 59,
+  "n_segments": 533
+}

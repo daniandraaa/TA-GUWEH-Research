@@ -1,0 +1,140 @@
+{
+  "protocol": {
+    "source_v13_run": "20261008_proposal_baseline_vs_finetune_v13",
+    "models": [
+      "encoder",
+      "patchtst",
+      "hierarchical"
+    ],
+    "arms": [
+      "baseline",
+      "finetune"
+    ],
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cv_seeds": [
+      42,
+      43,
+      44
+    ],
+    "label_map": {
+      "0": 0,
+      "1": 1,
+      "2": 1
+    },
+    "class_names": [
+      "LVOT",
+      "RVOT"
+    ],
+    "evaluation_segment_chunk": 16,
+    "minimum_free_gib": 1.5,
+    "decision": {
+      "metric": "patient_macro_f1_binary_threshold_0.5",
+      "test": "wilcoxon_two_sided_paired_fold_seed",
+      "multiple_comparison": "holm_over_6_model_arm",
+      "alpha": 0.05,
+      "rule": "per model, fine-tuning arm; pakai V14 bila mean selisih F1 > 0 dan p Holm < 0,05, selain itu tetap V13 digabung"
+    },
+    "test_pool_read": false
+  },
+  "source_v13_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "source_v13_selection_hash": "ae0d28b8f2ceaaaed2d716da6e36ef8a932fec1a280175fc8d2360c03a853fbe",
+  "scenarios": {
+    "encoder": {
+      "baseline": {
+        "id": "baseline",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "augmentation": "none"
+      },
+      "finetune": {
+        "id": "G02",
+        "learning_rate": 0.0001,
+        "batch_size": 32,
+        "augmentation": "gan"
+      }
+    },
+    "patchtst": {
+      "baseline": {
+        "id": "baseline",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "augmentation": "none"
+      },
+      "finetune": {
+        "id": "G02",
+        "learning_rate": 0.0001,
+        "batch_size": 32,
+        "augmentation": "gan"
+      }
+    },
+    "hierarchical": {
+      "baseline": {
+        "id": "baseline",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "augmentation": "none"
+      },
+      "finetune": {
+        "id": "G03",
+        "learning_rate": 0.0001,
+        "batch_size": 64,
+        "augmentation": "gan"
+      }
+    }
+  },
+  "development_cache": {
+    "X.npy": "c3291ca64555d8160f5bf98509ed79317061e59973f71e68d706ac4b61f0b96d",
+    "segments.csv": "8a9bd6beb4acb266e3c018c18a8ba7b3256c21dd26f87bc79a2951bc4f1a8602",
+    "manifest.json": "e9c7b1679b4bc3975b95da507cd640c0d0787c715830f98a753fbf51219a171a"
+  },
+  "model_config": {
+    "n_leads": 12,
+    "n_classes": 2,
+    "cnn_channels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "cnn_kernels": [
+      7,
+      5,
+      3,
+      3
+    ],
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "transformer_dropout": 0.2,
+    "fc_dropout": 0.3,
+    "patch_size": 16
+  },
+  "class_names": [
+    "LVOT",
+    "RVOT"
+  ],
+  "code": {
+    "__init__.py": "e52ab3ea29a5ce72fc5ad1d9a0c19072c676fbb4b4a34d7e7a14837186225707",
+    "__main__.py": "d5bf01e815b508d0edbe3e48ec751258dd3713f4df0130196c1cae1990cd330f",
+    "common.py": "f9794418868244b9a42917d9381e1019d04958409b8c6bb3433f2e655df79bbd",
+    "experiment.py": "0c4dd77d20127cee4bbcb6407dc27e3b65a1ac81a95c286dfb3f08f50c37a42d"
+  },
+  "runtime": {
+    "python": "3.14.2",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "torch": "2.12.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "shap": "0.52.0",
+    "PyYAML": "6.0.3"
+  },
+  "test_pool_read": false,
+  "experiment_hash": "005040f0701fcbc759ef1eb7662699f7171b04c8446775854484743140717ea1"
+}

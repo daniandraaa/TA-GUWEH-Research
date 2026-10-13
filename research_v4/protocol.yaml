@@ -1,0 +1,42 @@
+source_v3_run: 20261001_patient_r_candidates_v3
+models: [encoder, patchtst, hierarchical, residual_multiscale, lead_time]
+pooling: [mean, attention]
+learning_rates: [0.0001, 0.0005, 0.001]
+batch_sizes: [16, 32, 64]
+# A batch_size is a maximum SEGMENT budget, preserving the accepted grid.
+# 4 segments per training patient => patient minibatches of 4, 8, 16.
+segments_per_patient: 4
+sampling_rate: 2000
+segment_length: 5000
+evaluation_segment_chunk: 16
+cv_seed: 42
+stability_seeds: [42, 43, 44]
+diagnostic_seeds: [42, 43, 44]
+final_seeds: [42, 43, 44, 45, 46]
+primary_seed: 42
+pilot_scenario: S04
+minimum_free_gib: 2.0
+training:
+  optimizer: AdamW
+  weight_decay: 0.0001
+  epochs: 100
+  patience: 15
+  minimum_lr: 0.000001
+  gradient_clip: 1.0
+  class_weighting: inverse_training_patient_class_frequency
+  scheduler: cosine_over_100_epochs
+new_model:
+  dimension: 64
+  heads: 4
+  layers: 2
+  dropout: 0.2
+  temporal_bins: 16
+  normalization: GroupNorm
+endpoint: patient_level_three_anatomical_groups
+selection_metric: mean_five_fold_patient_macro_f1
+selection_tiebreak: [lower_fold_standard_deviation, pooling_name, scenario_name]
+historical_test_previously_observed: true
+expert_ecg_review_available: false
+attention_is_clinical_PVC_annotation: false
+synthetic_training_enabled: false
+pretrained_weights_used: false

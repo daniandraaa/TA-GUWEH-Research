@@ -1,0 +1,23 @@
+source_run: 20260929_grid9_v1
+arms: [real_only, weighted_real]
+class_names: [LVOT, RVOT_cusp, RVOT_septal_freewall_other]
+sampling_rate: 2000
+sampling_rate_source: https://www.nature.com/articles/s41597-020-0440-8
+sampling_evidence: published_dataset_and_local_structure_match_not_original_download_checksum
+segment_length: 5000
+overlap: 0.5
+preprocessing:
+  input: PVCVTRawECGData
+  highpass_hz: 0.5
+  highpass_order: 4
+  implementation: sosfiltfilt
+  wavelet: coif5
+  level: 5
+  threshold: per_level_SURE_soft
+final_seeds: [42, 43, 44, 45, 46]
+retain_cv_checkpoints: false
+minimum_free_gib: 1.5
+bootstrap_repeats: 2000
+bootstrap_seed: 20260930
+# Historical GAN is not reused after preprocessing changes.
+# New GAN quality/augmentation experiments require a separate preregistered run.

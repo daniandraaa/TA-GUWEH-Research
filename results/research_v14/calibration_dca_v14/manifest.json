@@ -1,0 +1,6 @@
+{
+  "positive_class": "LVOT",
+  "development": "CV OOF mean 3 seeds",
+  "test": "ensemble 5 seeds",
+  "recalibration_fitted_on_test": false
+}

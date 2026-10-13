@@ -1,0 +1,42 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "passed": true,
+  "numerical_screen": {
+    "passed": true,
+    "finite": true,
+    "classes": [
+      {
+        "label": 0,
+        "distinct_fraction": 1.0,
+        "near_duplicate_fraction": 0.0,
+        "has_constant_lead": false
+      },
+      {
+        "label": 1,
+        "distinct_fraction": 1.0,
+        "near_duplicate_fraction": 0.0,
+        "has_constant_lead": false
+      },
+      {
+        "label": 2,
+        "distinct_fraction": 1.0,
+        "near_duplicate_fraction": 0.0,
+        "has_constant_lead": false
+      }
+    ],
+    "exact_copy_hash_count": 0,
+    "errors": [],
+    "nearest_metric": "same_class_full_native_zero_lag_rmse; not phase aligned; not privacy certification"
+  },
+  "failed_families": [],
+  "role": "engineering_screen_not_clinical_validation",
+  "clinical_validity_established": false,
+  "test_signals_read": false,
+  "files": {
+    "synthetic_nearest_fit.csv": "ec78a8fcb14b5e17c744f042da512de458d34d5feabb9321675317751e6e0b9d",
+    "synthetic_features.csv": "5338fa2d8704c4b38f94b4048f126c8e53c2792f112f42b0415372fc29c44b6b",
+    "feature_distances.csv": "eb1d43d8e480d7bb07626d1b9e9e408c712ada4bba7fe7ba6501bfa58c229a3f",
+    "reference_nearest_fit.csv": "4cce2a2c8e6903343040edb14d39e167abeb0d799486f4b9350603003d531453"
+  },
+  "record_hash": "5af79618201d0bf1810405d40d8db958619255d4077368f5a7d493f9f3e5a25c"
+}

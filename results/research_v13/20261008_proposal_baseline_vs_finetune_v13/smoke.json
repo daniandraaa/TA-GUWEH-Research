@@ -1,0 +1,86 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "device": "mps",
+  "passed": true,
+  "cases": [
+    {
+      "model": "encoder",
+      "scenario": "baseline",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "gan_replacements_in_batch": 0,
+      "loss": 1.1170367002487183,
+      "seconds": 1.2683985420153476
+    },
+    {
+      "model": "encoder",
+      "scenario": "G09",
+      "batch_shape": [
+        16,
+        4,
+        12,
+        5000
+      ],
+      "gan_replacements_in_batch": 15,
+      "loss": 1.1543453931808472,
+      "seconds": 1.285657458996866
+    },
+    {
+      "model": "patchtst",
+      "scenario": "baseline",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "gan_replacements_in_batch": 0,
+      "loss": 1.0630196332931519,
+      "seconds": 0.20534308295464143
+    },
+    {
+      "model": "patchtst",
+      "scenario": "G09",
+      "batch_shape": [
+        16,
+        4,
+        12,
+        5000
+      ],
+      "gan_replacements_in_batch": 15,
+      "loss": 1.0853272676467896,
+      "seconds": 0.2117267909925431
+    },
+    {
+      "model": "hierarchical",
+      "scenario": "baseline",
+      "batch_shape": [
+        8,
+        4,
+        12,
+        5000
+      ],
+      "gan_replacements_in_batch": 0,
+      "loss": 1.349578619003296,
+      "seconds": 0.22083041700534523
+    },
+    {
+      "model": "hierarchical",
+      "scenario": "G09",
+      "batch_shape": [
+        16,
+        4,
+        12,
+        5000
+      ],
+      "gan_replacements_in_batch": 15,
+      "loss": 1.2203627824783325,
+      "seconds": 0.6003048330312595
+    }
+  ],
+  "weights_discarded": true
+}

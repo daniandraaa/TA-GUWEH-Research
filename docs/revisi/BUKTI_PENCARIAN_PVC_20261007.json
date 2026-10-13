@@ -1,0 +1,253 @@
+{
+  "review_date": "2026-10-07",
+  "literature_cutoff": "2026-10-07",
+  "timezone": "Asia/Jakarta",
+  "scope": "Current targeted literature review only; no scheduled monitoring.",
+  "review_type": "Targeted narrative evidence review; not exhaustive systematic review.",
+  "primary_sources": [
+    {
+      "key": "nakasone2024dualrhythm_review20261007",
+      "doi": "10.1093/europace/euae240",
+      "access": "journal_full_text",
+      "urls": [
+        "https://academic.oup.com/europace/article/26/10/euae240/7756618",
+        "https://da.lib.kobe-u.ac.jp/da/kernel/0100491798/0100491798.pdf"
+      ],
+      "caveat": "Binary right/left origin; external Belgium cohort. F1 is not three-class macro-F1."
+    },
+    {
+      "key": "miyamae2026paired",
+      "doi": "10.1253/circj.CJ-25-0534",
+      "access": "journal_full_html",
+      "urls": [
+        "https://www.jstage.jst.go.jp/article/circj/90/7/90_CJ-25-0534/_article/-char/en",
+        "https://www.jstage.jst.go.jp/article/circj/advpub/0/advpub_CJ-25-0534/_html/-char/en"
+      ],
+      "caveat": "Final issue 2026, online 2025; selected TZ V3/V4 binary RVOT/LVOT, one centre."
+    },
+    {
+      "key": "shahsavari2024origin_journal",
+      "doi": "10.1109/TIM.2024.3417597",
+      "access": "author_institution_journal_metadata_and_abstract",
+      "urls": [
+        "https://pure.etsmtl.ca/en/publications/localizing-the-origin-of-idiopathic-ventricular-arrhythmias-from-/",
+        "https://ieeexplore.ieee.org/document/10568106/"
+      ],
+      "caveat": "Peer-reviewed 2024 publication verified; final journal full text not accessed."
+    },
+    {
+      "key": "shahsavari2023origin_preprint_review20261007",
+      "doi": null,
+      "access": "author_preprint_full_text_v1",
+      "urls": [
+        "https://arxiv.org/abs/2302.10824",
+        "https://arxiv.org/pdf/2302.10824"
+      ],
+      "caveat": "Detailed preprocessing and tenfold description sourced to 2023 v1, not presumed identical to journal methods."
+    },
+    {
+      "key": "zhao2022features",
+      "doi": "10.1016/j.hrthm.2022.07.010",
+      "access": "primary_abstract",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35843464/"
+      ],
+      "caveat": "External/prospective binary localization; full feature definitions not inspected."
+    },
+    {
+      "key": "zheng2022origins_review20261007",
+      "doi": "10.3389/fcvm.2022.809027",
+      "access": "journal_full_text",
+      "urls": [
+        "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2022.809027/full"
+      ],
+      "caveat": "ECG-sample 21-site accuracy; testing-cohort model-selection wording and blind-test wording require clarification, not confirmed leakage."
+    },
+    {
+      "key": "kujime2024semantic_review20261007",
+      "doi": "10.1002/joa3.13096",
+      "access": "journal_full_text",
+      "urls": [
+        "https://onlinelibrary.wiley.com/doi/full/10.1002/joa3.13096"
+      ],
+      "caveat": "Record classification of left/right/Neutral; determinable-case score must be accompanied by abstention coverage."
+    },
+    {
+      "key": "zhang2023ecgnet",
+      "doi": "10.1109/TBME.2022.3193906",
+      "access": "primary_abstract",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35881595/"
+      ],
+      "caveat": "Final issue 2023. Image input; exact split grouping/class definitions not inspected from full text."
+    },
+    {
+      "key": "guo2025pvcsnet",
+      "doi": "10.1109/JBHI.2024.3471510",
+      "access": "primary_abstract",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39348245/"
+      ],
+      "caveat": "Final issue 2025, online 2024; cohort counts and patient-disjoint split/external evaluation not verified."
+    },
+    {
+      "key": "wang2024twostep",
+      "doi": "10.1007/s10840-023-01551-7",
+      "access": "publisher_abstract",
+      "urls": [
+        "https://link.springer.com/article/10.1007/s10840-023-01551-7"
+      ],
+      "caveat": "Exact origin accuracy differs from neighbouring-region rank accuracy."
+    },
+    {
+      "key": "he2020wholeventricle",
+      "doi": "10.1088/1361-6579/ab86d7",
+      "access": "primary_abstract_search_cached",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/32252035/"
+      ],
+      "caveat": "Split stated by sample groups, patient grouping not established; detection and origin are separate endpoints."
+    },
+    {
+      "key": "nakamura2021origin",
+      "doi": "10.1016/j.cvdhj.2020.11.006",
+      "access": "primary_abstract",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35265893/",
+        "https://www.sciencedirect.com/science/article/pii/S266669362030061X"
+      ],
+      "caveat": "Weighted accuracy SVM 0.85 exceeds CNN 0.80; binary and four-class results differ."
+    },
+    {
+      "key": "yang2018pvc_review20261007",
+      "doi": "10.1109/TBME.2017.2756869",
+      "access": "primary_abstract_and_available_primary_excerpts",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28952932/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6089373/"
+      ],
+      "caveat": "Geometry/lead-field simulation and millimetre localization differ from local classification."
+    },
+    {
+      "key": "baek2026origin_abstract_review20261007",
+      "doi": "10.1093/ehjdh/ztaf143.133",
+      "access": "conference_supplement_abstract",
+      "urls": [
+        "https://academic.oup.com/ehjdh/article/7/Supplement_1/ztaf143.133/8423015"
+      ],
+      "caveat": "Macro-AUC not macro-F1; cohort overlap with Seo abstract unknown."
+    },
+    {
+      "key": "seo2026epaiassist_abstract",
+      "doi": "10.1093/europace/euag105.024",
+      "access": "conference_supplement_abstract_primary_search_cached",
+      "urls": [
+        "https://academic.oup.com/europace/article/28/Supplement_1/euag105.024/8716641",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13302471/"
+      ],
+      "caveat": "Same 584/470 counts and macro-AUC as Baek abstract; related-cohort inference only, no independence assumed."
+    },
+    {
+      "key": "hamami2026upvc",
+      "doi": "10.1109/TBME.2026.3655531",
+      "access": "author_manuscript_full_text_v2_and_author_journal_metadata",
+      "urls": [
+        "https://arxiv.org/abs/2506.11238",
+        "https://arxiv.org/pdf/2506.11238",
+        "https://www.aimlab-technion.com/post/upvc-net-a-universal-premature-ventricularcontraction-detection-deep-learning-algorithm",
+        "https://ieeexplore.ieee.org/document/11359459"
+      ],
+      "caveat": "Single-lead PVC detection, not origin; journal full publisher text and public checkpoint not inspected/verified."
+    },
+    {
+      "key": "collins2024tripodai",
+      "doi": "10.1136/bmj-2023-078378",
+      "access": "primary_reporting_guidance_excerpts",
+      "urls": [
+        "https://www.bmj.com/content/385/bmj-2023-078378",
+        "https://www.bmj.com/content/bmj/385/bmj-2023-078378.full.pdf"
+      ],
+      "caveat": "Reporting guideline, not evidence of an architecture's performance."
+    },
+    {
+      "key": "macostrail2024dualrhythm_code",
+      "doi": null,
+      "access": "author_repository_static_inspection",
+      "urls": [
+        "https://github.com/macostrail/dual-rhythm-model",
+        "https://github.com/macostrail/dual-rhythm-model/blob/main/models/base_model.py",
+        "https://github.com/macostrail/dual-rhythm-model/blob/main/models/conv_model.py",
+        "https://github.com/macostrail/dual-rhythm-model/blob/main/models/resnet1d.py",
+        "https://github.com/macostrail/dual-rhythm-model/blob/main/dataset.py",
+        "https://github.com/macostrail/dual-rhythm-model/blob/main/train.py",
+        "https://github.com/macostrail/dual-rhythm-model/blob/main/config.py"
+      ],
+      "caveat": "Code was not executed; complete paper lead-token Transformer path, trained checkpoints and reuse licence not verified."
+    },
+    {
+      "key": "transekg2026_excluded_origin",
+      "doi": "10.3389/fcvm.2026.1802210",
+      "access": "journal_full_text_relevant_methods",
+      "urls": [
+        "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1802210/full"
+      ],
+      "caveat": "Excluded as origin benchmark: single-lead heartbeat task, explicitly intra-patient beat split."
+    }
+  ],
+  "representative_searches": [
+    "\"premature ventricular contraction\" \"transformer\" \"localization\" 2026",
+    "\"premature ventricular contraction origins\" CNN 2026",
+    "\"premature ventricular contraction\" \"dual-rhythm\" 2025 2026",
+    "\"Localization of origins of premature ventricular contraction in the whole ventricle\"",
+    "\"Localizing the Origin of Idiopathic Ventricular Arrhythmias\" restricted to pure.etsmtl.ca",
+    "\"EP-AI ASSIST\" \"Results\" \"2026\"",
+    "\"Prediction of premature ventricular complex origins using artificial intelligence-enabled algorithms\" restricted to PubMed/ScienceDirect"
+  ],
+  "discovery_only_reviews": [
+    {
+      "doi": "10.3389/fcvm.2026.1864886",
+      "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1864886/full"
+    },
+    {
+      "doi": "10.1111/pace.15089",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39428720/"
+    }
+  ],
+  "limitations": [
+    "Access failures/paywalls limit full-method inspection for some studies.",
+    "Journal quartiles by year and category not verified; no blanket Q1 classification.",
+    "No local clinical beat annotations or new experimental scores produced.",
+    "Binary, record/beat-level, abstention-selected and anatomical-coordinate endpoints cannot be ranked as local three-class patient macro-F1.",
+    "New recommended experiment phases are hypotheses, not implementation or guaranteed improvements."
+  ],
+  "local_context": {
+    "development_patients": 230,
+    "class_counts": {
+      "LVOT": 57,
+      "RVOT_cusp": 103,
+      "RVOT_septal_freewall_other": 70
+    },
+    "completed_feature_arms": 3,
+    "pending_encoder_fusion_arms": 4,
+    "fold_macro_f1": {
+      "qrs_rr": 0.421045,
+      "morphology": 0.555457,
+      "morphology_rr": 0.553168
+    },
+    "error_focus": {
+      "morphology_total_errors": 107,
+      "cusp_other_confusions": 79
+    },
+    "local_source": "docs/revisi/ANALISIS_HASIL_FITUR_V11_20261007.md",
+    "local_candidates_pvc_verified": false,
+    "historical_holdout_is_new_unseen": false
+  },
+  "work_done": {
+    "new_training": false,
+    "new_waveform_inference": false,
+    "model_source_modified": false,
+    "scheduled_automation_created": false,
+    "report_created": true,
+    "bibliography_created": true
+  }
+}

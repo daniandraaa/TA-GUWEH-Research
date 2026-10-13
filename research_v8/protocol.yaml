@@ -1,0 +1,25 @@
+source_v7_run: 20261004_fit_distribution_gan_v7
+models: [hierarchical, encoder]
+arms: [real_only, real_aug, gan_aug]
+folds: [1, 2, 3, 4, 5]
+seeds: [42, 43, 44]
+patient_batch_size: 8
+segments_per_patient: 4
+sampling_rate: 2000
+segment_length: 5000
+evaluation_segment_chunk: 16
+minimum_free_gib: 3.0
+augmentation:
+  replacements_per_eligible_bag: 1
+  eligible_bag_windows: 4
+  short_bags: unchanged
+  real_source: same_class_other_patient_uniform_gan_fit_patient_then_window
+  gan_source: unchanged_qc_passed_v7_64_windows_per_class_per_fold
+epoch_selection: real_only_gan_fit_vs_gan_reference_inner_macro_f1
+outer_budget: same_inner_selected_epoch_for_all_three_arms
+outer_checkpoint: fixed_last_epoch_no_outer_selection
+hyperparameters: inherited_v4_selected_lr_pooling_no_new_grid
+model_initialization: from_scratch_same_seed_across_arms
+final_training_enabled: false
+test_signals_enabled: false
+interpretation: exploratory_development_ablation_prior_hyperparameter_selection_not_fully_nested

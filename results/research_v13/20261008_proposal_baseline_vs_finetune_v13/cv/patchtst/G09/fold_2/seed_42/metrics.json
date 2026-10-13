@@ -1,0 +1,72 @@
+{
+  "metrics": {
+    "accuracy": 0.6170212765957447,
+    "precision": 0.4126344086021505,
+    "sensitivity": 0.5793650793650794,
+    "specificity": 0.789010989010989,
+    "f1": 0.4816849816849817,
+    "auc": 0.7517149517149516
+  },
+  "confusion_matrix": [
+    [
+      10,
+      2,
+      0
+    ],
+    [
+      2,
+      19,
+      0
+    ],
+    [
+      4,
+      10,
+      0
+    ]
+  ],
+  "classification_report": {
+    "LVOT": {
+      "precision": 0.625,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.7142857142857143,
+      "support": 12.0
+    },
+    "RVOT_cusp": {
+      "precision": 0.6129032258064516,
+      "recall": 0.9047619047619048,
+      "f1-score": 0.7307692307692307,
+      "support": 21.0
+    },
+    "RVOT_septal_freewall_other": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 14.0
+    },
+    "accuracy": 0.6170212765957447,
+    "macro avg": {
+      "precision": 0.4126344086021505,
+      "recall": 0.5793650793650794,
+      "f1-score": 0.4816849816849817,
+      "support": 47.0
+    },
+    "weighted avg": {
+      "precision": 0.4334248455730954,
+      "recall": 0.6170212765957447,
+      "f1-score": 0.5088847322889876,
+      "support": 47.0
+    }
+  },
+  "validation_recall_class_0": 0.8333333333333334,
+  "validation_predicted_class_0": 16,
+  "validation_recall_class_1": 0.9047619047619048,
+  "validation_predicted_class_1": 31,
+  "validation_recall_class_2": 0.0,
+  "validation_predicted_class_2": 0,
+  "validation_missing_predicted_classes": 1,
+  "n_validation_patients": 47,
+  "selected_checkpoint_sha256": "b61c03ce28c5f14e417cb46a8f0723a631ac7b2e9368bff5f9abfc4165b86829",
+  "best_epoch": 2,
+  "epochs_run": 17,
+  "elapsed_seconds": 25.72218762501143
+}

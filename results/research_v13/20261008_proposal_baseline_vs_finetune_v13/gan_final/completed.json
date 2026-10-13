@@ -1,0 +1,13 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "case_hash": "046d9409ec00faf8d48094c9fd21077f1659af1544e4912da499425b264fdd16",
+  "files": {
+    "case.json": "608ea230963dee96596954b7a5305beccd047c2a2a694a44d35aef99fa991f2d",
+    "generator.pth": "b428b3f47654545dce751ae1d73d06fc3071c7c5a6f175cdf9b041cd55266a79",
+    "discriminator.pth": "af8017917afca9d5c5ae5dc653cc8c81918b544152f8e379a0901e3ecccba157",
+    "history.csv": "d430a734e4710aed4e847d1e54a2b167f3de9521313ccf2dcfd4e325626bb252",
+    "last.pt": "481744e61c7f4c2a38991634766f28c4f62592dde30d82d5afd6de9d739a3b79"
+  },
+  "test_signals_read": false,
+  "record_hash": "9a509f139e6992f01febf3e26bd82273cf09ca499fc4951833cc857d0c5609cc"
+}

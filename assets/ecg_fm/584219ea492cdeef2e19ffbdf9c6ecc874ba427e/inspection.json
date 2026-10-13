@@ -1,0 +1,166 @@
+{
+  "checkpoint_sha256": "4d0142bcb485eb9f0c7845e0c19ff3463f6ae9d0e458eab69136efe90ceb9b7e",
+  "checkpoint_revision": "584219ea492cdeef2e19ffbdf9c6ecc874ba427e",
+  "embedded_model_config": {
+    "_name": "wav2vec2_cmsc",
+    "all_gather": false,
+    "normalize": false,
+    "filter": false,
+    "data": "<REDACTED>",
+    "args": null,
+    "encoder_layers": 12,
+    "encoder_embed_dim": 768,
+    "encoder_ffn_embed_dim": 3072,
+    "encoder_attention_heads": 12,
+    "layer_norm_first": false,
+    "dropout": 0.1,
+    "attention_dropout": 0.1,
+    "activation_dropout": 0.0,
+    "encoder_layerdrop": 0.0,
+    "dropout_input": 0.1,
+    "dropout_features": 0.1,
+    "apply_mask": true,
+    "mask_length": 10,
+    "mask_prob": 0.65,
+    "mask_selection": "static",
+    "mask_other": 0.0,
+    "no_mask_overlap": false,
+    "mask_min_space": 1,
+    "mask_channel_length": 10,
+    "mask_channel_prob": 0.0,
+    "mask_channel_selection": "static",
+    "mask_channel_other": 0.0,
+    "no_mask_channel_overlap": false,
+    "mask_channel_min_space": 1,
+    "extractor_mode": "default",
+    "conv_feature_layers": "[(256, 2, 2)] * 4",
+    "in_d": 12,
+    "conv_bias": false,
+    "feature_grad_mult": 0.1,
+    "conv_pos": 128,
+    "conv_pos_groups": 16,
+    "logit_temp": 0.1,
+    "quantize_targets": true,
+    "quantize_input": false,
+    "same_quantizer": false,
+    "target_glu": false,
+    "latent_vars": 320,
+    "latent_groups": 2,
+    "latent_dim": 0,
+    "final_dim": 256,
+    "num_negatives": 100,
+    "negatives_from_everywhere": false,
+    "cross_sample_negatives": 0,
+    "codebook_negatives": 0,
+    "latent_temp": [
+      2.0,
+      0.5,
+      0.999995
+    ]
+  },
+  "encoder_model_config": {
+    "encoder_layers": 12,
+    "encoder_embed_dim": 768,
+    "encoder_ffn_embed_dim": 3072,
+    "encoder_attention_heads": 12,
+    "layer_norm_first": false,
+    "saliency": false,
+    "dropout": 0.1,
+    "attention_dropout": 0.1,
+    "activation_dropout": 0.0,
+    "encoder_layerdrop": 0.0,
+    "dropout_input": 0.1,
+    "dropout_features": 0.1,
+    "conv_feature_layers": "[(256, 2, 2)] * 4",
+    "in_d": 12,
+    "extractor_mode": "default",
+    "conv_bias": false,
+    "conv_pos": 128,
+    "conv_pos_groups": 16,
+    "feature_grad_mult": 0.1,
+    "all_gather": false
+  },
+  "all_pretraining_parameters": 90883072,
+  "encoder_parameters": 90373248,
+  "pretraining_only_keys_omitted": [
+    "mask_emb",
+    "quantizer.vars",
+    "quantizer.weight_proj.weight",
+    "quantizer.weight_proj.bias",
+    "project_q.weight",
+    "project_q.bias",
+    "final_proj.weight",
+    "final_proj.bias"
+  ],
+  "public_yaml_disagreements": {
+    "encoder_layers": {
+      "public_yaml": 24,
+      "embedded": 12
+    },
+    "encoder_embed_dim": {
+      "public_yaml": 1024,
+      "embedded": 768
+    },
+    "encoder_ffn_embed_dim": {
+      "public_yaml": 4096,
+      "embedded": 3072
+    },
+    "encoder_attention_heads": {
+      "public_yaml": 16,
+      "embedded": 12
+    }
+  },
+  "source_revision": "f8f0ff1c788a82c2059cb452cd5462898867489e",
+  "numerical_code": {
+    "model.py": "6ca5af640d457228e27ebc4ef1bca8a57b8b4d86dd22b93a4bc014e15b22080a",
+    "data.py": "d66dcdc7d397cdffd1c52ba8789991aae7e2c9b3cf97e22301b1ae47edcdbdbe",
+    "_official/LICENSE": "1d058d5f37bf99c769a084fb6e1e633e0e3fe6cbba5b6d6e1c17f5e84f800976",
+    "_official/__init__.py": "eb51d7920fe4b3476e0a8a000df6f7f22df933e28e1ef87c8a7d024199382c1f",
+    "_official/conv_feature_extraction.py": "53aa4c42a2a2db04aafb5c5e267289573c38573cae9e6681e28ce3da91a43ddb",
+    "_official/conv_positional_encoding.py": "d19f45953b96783aa2f11647a49275ac667274923145b6bc09f861f0ff8f9421",
+    "_official/dropout.py": "233463d2ec3895a5b372857c5ad83ea0d6661a4b0ee52b903b81a09ab73aeaa3",
+    "_official/fp32_group_norm.py": "c447daabf3dc3b0aa9c79a25da702fc7e0e86c8b35014196658b10d2c50e3318",
+    "_official/layer_norm.py": "01648d7929bc62a8eb956052efc0d7cc181dcc1a052963db168c2ee45e524845",
+    "_official/multi_head_attention.py": "924a2edd222a627e5086a709f53a4b857b25007408efc55083e412384a2d2c0e",
+    "_official/quant_noise.py": "054195f1ccdb8e4a0fa9ba289377a394ef78db5a1411e794b3ae635d5489fb26",
+    "_official/reference_ecg_transformer.py": "2d67d0130d508a54b25ffcee18e3fe686542205da1e065b96b256b49922e37e0",
+    "_official/reference_transformer.py": "808fd41ca5e39308af1bf18fc5041c00925516db6b5df476ffe095999f7c6d01",
+    "_official/reference_wav2vec2.py": "87978be021204a6ee765b32f6bc122f316bd0b8cd61d68f1b9be6b48193cc083",
+    "_official/same_pad.py": "97706e47534d82bffe5fec4a5e64cf6371248d02d0abc803803c086c19cadf67",
+    "_official/source_manifest.json": "5a7a856cfd4b15003aadba0dda01a98cf64f47721e5b78303f5fb3461c44faef",
+    "_official/transformer_encoder.py": "75a5b4b668c801cc03acdf975465d57195bbec6616c8a6f41e3a7ffe91255885",
+    "_official/transformer_encoder_layer.py": "3cb1d798edc237a5075a812bb4dea178e83cb61d35c08cbaf516d1e946d00c83",
+    "_official/transpose_last.py": "c718f7766a86e6694317c276607f45c6a4b447cdbd378c752143e03b571fc4f6"
+  },
+  "model_only_sha256": "80fe14bcdc3dad810f113b94ce3b24a0b63b58d4dbbb9c2d1c4c32b89409c8a2",
+  "optimizer_removed_model_tensors_unchanged": true,
+  "strict_encoder_loading": true,
+  "unmasked_cpu_parity": [
+    {
+      "samples": 1250,
+      "shape": [
+        1,
+        78,
+        768
+      ],
+      "reference_max_abs_error": 0.0,
+      "tail_split_max_abs_error": 0.0,
+      "finite": true
+    },
+    {
+      "samples": 2500,
+      "shape": [
+        1,
+        156,
+        768
+      ],
+      "reference_max_abs_error": 0.0,
+      "tail_split_max_abs_error": 0.0,
+      "finite": true
+    }
+  ],
+  "no_environment_packages_installed": true,
+  "genuine_waveform_inference": false,
+  "training_performed": false,
+  "test_signals_read": false
+}

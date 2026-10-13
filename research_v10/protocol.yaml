@@ -1,0 +1,34 @@
+source_v9_run: 20261006_inner_epoch_median_real_only_v9
+probe_arms: [random_probe, pretrained_probe]
+folds: [1, 2, 3, 4, 5]
+cv_seed: 42
+outer_seeds: [42, 43, 44]
+random_backbone_seed: 424242
+head_learning_rates: [0.0001, 0.001, 0.01]
+tail_learning_rates: [0.000001, 0.000003, 0.00001]
+patient_batch_sizes: [8, 16, 32]
+head_epochs: 100
+head_patience: 15
+tail_epochs: 30
+tail_patience: 7
+weight_decay: 0.0001
+gradient_clip: 1.0
+class_weighting: inverse_training_patient_frequency
+sampling_rate: 2000
+native_samples: 5000
+adapted_sampling_rate: 500
+adapted_samples: 1250
+normalization: per_native_window_per_lead_mean_std_plus_1e-8
+pooling: mean_all_windows_of_mean_valid_tokens_before_linear_head
+feature_chunk: 4
+cache_dtype: float32
+minimum_free_gib: 3.0
+tail_scope: fold1_seed42_pilot_only
+tail_head_learning_rate: selected_pretrained_probe_inner_learning_rate
+selection: inner_macro_f1_then_lower_learning_rate_then_smaller_batch
+outer_checkpoint: refit_fixed_inner_selected_epoch_no_outer_callbacks
+historical_test_enabled: false
+final_training_enabled: false
+pretraining_patient_independence_verified: false
+pretraining_provenance_limitation: shared_ningbo_hospital_source_patient_overlap_unverified
+interpretation: exploratory_development_transfer_probe_and_partial_finetuning_pilot

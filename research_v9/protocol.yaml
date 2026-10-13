@@ -1,0 +1,19 @@
+source_v8_run: 20261005_paired_classifier_augmentation_v8
+models: [hierarchical, encoder]
+folds: [1, 2, 3, 4, 5]
+seeds: [42, 43, 44]
+arm: real_only
+epoch_rule: median_of_three_existing_inner_selected_epochs_per_model_fold
+inner_split_rule: unchanged_v8_gan_fit_and_reference_patients
+outer_checkpoint: fixed_last_epoch_no_outer_selection
+hyperparameters: unchanged_v8_lr_pooling_optimizer_scheduler_scaler_k4
+patient_batch_size: 8
+segments_per_patient: 4
+sampling_rate: 2000
+segment_length: 5000
+evaluation_segment_chunk: 16
+reuse_rule: exact_matching_v8_real_only_recipe_device_and_epoch_by_reference
+minimum_free_gib: 3.0
+final_training_enabled: false
+test_signals_enabled: false
+interpretation: exploratory_development_ablation_prior_hyperparameter_selection_not_fully_nested

@@ -1,0 +1,25 @@
+{
+  "experiment_hash": "005040f0701fcbc759ef1eb7662699f7171b04c8446775854484743140717ea1",
+  "development_patients": 230,
+  "development_windows": 2274,
+  "class_patients": {
+    "LVOT": 57,
+    "RVOT": 173
+  },
+  "scenarios": {
+    "encoder": {
+      "baseline": "baseline",
+      "finetune": "G02"
+    },
+    "patchtst": {
+      "baseline": "baseline",
+      "finetune": "G02"
+    },
+    "hierarchical": {
+      "baseline": "baseline",
+      "finetune": "G03"
+    }
+  },
+  "cv_fits_expected": 90,
+  "test_signals_read": false
+}

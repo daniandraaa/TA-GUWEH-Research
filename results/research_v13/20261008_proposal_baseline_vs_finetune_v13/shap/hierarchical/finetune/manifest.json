@@ -1,0 +1,116 @@
+{
+  "experiment_hash": "ee2e1b643e78850a47a02de91d7195c6ebc219ded559697c8580318e7c8842a2",
+  "checkpoint_sha256": "59c87772ad5fc32a4c2cbddcfccdcbc0d5b04ce602bdb2bd3f23bb525a698622",
+  "background_segment_index": [
+    2028,
+    2066,
+    2095,
+    2117,
+    2143,
+    2132,
+    2174,
+    2262,
+    31,
+    80,
+    308,
+    317,
+    360,
+    407,
+    623,
+    727,
+    996,
+    1042,
+    1048,
+    1074,
+    1148,
+    1219,
+    1265,
+    1522,
+    1587,
+    1665,
+    1737,
+    1743,
+    1747,
+    1763
+  ],
+  "explained": [
+    {
+      "hospital_id": "ANON0253",
+      "label": 0,
+      "segment_index": 457
+    },
+    {
+      "hospital_id": "ANON0258",
+      "label": 1,
+      "segment_index": 484
+    },
+    {
+      "hospital_id": "ANON0266",
+      "label": 1,
+      "segment_index": 510
+    },
+    {
+      "hospital_id": "ANON0009",
+      "label": 2,
+      "segment_index": 10
+    },
+    {
+      "hospital_id": "ANON0022",
+      "label": 0,
+      "segment_index": 34
+    },
+    {
+      "hospital_id": "ANON0024",
+      "label": 0,
+      "segment_index": 46
+    },
+    {
+      "hospital_id": "ANON0071",
+      "label": 1,
+      "segment_index": 137
+    },
+    {
+      "hospital_id": "ANON0089",
+      "label": 2,
+      "segment_index": 195
+    },
+    {
+      "hospital_id": "ANON0091",
+      "label": 2,
+      "segment_index": 205
+    },
+    {
+      "hospital_id": "ANON0144",
+      "label": 1,
+      "segment_index": 288
+    },
+    {
+      "hospital_id": "ANON0177",
+      "label": 2,
+      "segment_index": 324
+    },
+    {
+      "hospital_id": "ANON0183",
+      "label": 2,
+      "segment_index": 344
+    },
+    {
+      "hospital_id": "ANON0211",
+      "label": 0,
+      "segment_index": 389
+    },
+    {
+      "hospital_id": "ANON0219",
+      "label": 1,
+      "segment_index": 400
+    },
+    {
+      "hospital_id": "ANON0237",
+      "label": 0,
+      "segment_index": 429
+    }
+  ],
+  "method": "shap.GradientExplainer",
+  "output": "true-class segment logit",
+  "clinical_validation": false
+}

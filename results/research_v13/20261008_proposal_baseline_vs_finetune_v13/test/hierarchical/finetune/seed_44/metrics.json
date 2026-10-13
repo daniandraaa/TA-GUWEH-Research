@@ -1,0 +1,62 @@
+{
+  "metrics": {
+    "accuracy": 0.576271186440678,
+    "precision": 0.5890804597701149,
+    "sensitivity": 0.6051587301587301,
+    "specificity": 0.7756335282651072,
+    "f1": 0.5886792452830188,
+    "auc": 0.7983221943748261
+  },
+  "confusion_matrix": [
+    [
+      12,
+      1,
+      1
+    ],
+    [
+      1,
+      7,
+      13
+    ],
+    [
+      3,
+      6,
+      15
+    ]
+  ],
+  "classification_report": {
+    "LVOT": {
+      "precision": 0.75,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8,
+      "support": 14.0
+    },
+    "RVOT_cusp": {
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
+      "support": 21.0
+    },
+    "RVOT_septal_freewall_other": {
+      "precision": 0.5172413793103449,
+      "recall": 0.625,
+      "f1-score": 0.5660377358490566,
+      "support": 24.0
+    },
+    "accuracy": 0.576271186440678,
+    "macro avg": {
+      "precision": 0.5890804597701149,
+      "recall": 0.6051587301587301,
+      "f1-score": 0.5886792452830188,
+      "support": 59.0
+    },
+    "weighted avg": {
+      "precision": 0.5663354763296318,
+      "recall": 0.576271186440678,
+      "f1-score": 0.5624560281419891,
+      "support": 59.0
+    }
+  },
+  "n_patients": 59,
+  "test_role": "historical_holdout_previously_observed"
+}

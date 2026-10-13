@@ -1,0 +1,51 @@
+{
+  "repo": "https://github.com/Jwoo5/fairseq-signals",
+  "revision": "f8f0ff1c788a82c2059cb452cd5462898867489e",
+  "modifications": "only internal import paths; numerical module bodies unchanged",
+  "files": {
+    "transpose_last.py": {
+      "upstream_sha256": "c718f7766a86e6694317c276607f45c6a4b447cdbd378c752143e03b571fc4f6",
+      "local_sha256": "c718f7766a86e6694317c276607f45c6a4b447cdbd378c752143e03b571fc4f6"
+    },
+    "fp32_group_norm.py": {
+      "upstream_sha256": "c447daabf3dc3b0aa9c79a25da702fc7e0e86c8b35014196658b10d2c50e3318",
+      "local_sha256": "c447daabf3dc3b0aa9c79a25da702fc7e0e86c8b35014196658b10d2c50e3318"
+    },
+    "layer_norm.py": {
+      "upstream_sha256": "01648d7929bc62a8eb956052efc0d7cc181dcc1a052963db168c2ee45e524845",
+      "local_sha256": "01648d7929bc62a8eb956052efc0d7cc181dcc1a052963db168c2ee45e524845"
+    },
+    "same_pad.py": {
+      "upstream_sha256": "97706e47534d82bffe5fec4a5e64cf6371248d02d0abc803803c086c19cadf67",
+      "local_sha256": "97706e47534d82bffe5fec4a5e64cf6371248d02d0abc803803c086c19cadf67"
+    },
+    "dropout.py": {
+      "upstream_sha256": "233463d2ec3895a5b372857c5ad83ea0d6661a4b0ee52b903b81a09ab73aeaa3",
+      "local_sha256": "233463d2ec3895a5b372857c5ad83ea0d6661a4b0ee52b903b81a09ab73aeaa3"
+    },
+    "quant_noise.py": {
+      "upstream_sha256": "054195f1ccdb8e4a0fa9ba289377a394ef78db5a1411e794b3ae635d5489fb26",
+      "local_sha256": "054195f1ccdb8e4a0fa9ba289377a394ef78db5a1411e794b3ae635d5489fb26"
+    },
+    "multi_head_attention.py": {
+      "upstream_sha256": "47f41c4cf649bffaf3fe438e3bc4b44c84684d087e8538d5b7a2e96f0ab856c3",
+      "local_sha256": "924a2edd222a627e5086a709f53a4b857b25007408efc55083e412384a2d2c0e"
+    },
+    "transformer_encoder_layer.py": {
+      "upstream_sha256": "9006bc5aa049918c20c7ccaf38d3beaa5c2dbdf104b51e96a9d3394a2da89959",
+      "local_sha256": "3cb1d798edc237a5075a812bb4dea178e83cb61d35c08cbaf516d1e946d00c83"
+    },
+    "transformer_encoder.py": {
+      "upstream_sha256": "56bc6290f5a6bb34a52bb16e84e60795268eff1ee83e0fe7897a03abc2556952",
+      "local_sha256": "75a5b4b668c801cc03acdf975465d57195bbec6616c8a6f41e3a7ffe91255885"
+    },
+    "conv_feature_extraction.py": {
+      "upstream_sha256": "69070a145108b6b0a3fd10ec4ffd68c3d1696c7c7e57567bb21aecfa0000be77",
+      "local_sha256": "53aa4c42a2a2db04aafb5c5e267289573c38573cae9e6681e28ce3da91a43ddb"
+    },
+    "conv_positional_encoding.py": {
+      "upstream_sha256": "85e83adc16662e20a3a63a78f64cbd69b4bd1f1cf8a4f78cdb66617e5c730e6f",
+      "local_sha256": "d19f45953b96783aa2f11647a49275ac667274923145b6bc09f861f0ff8f9421"
+    }
+  }
+}

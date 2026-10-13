@@ -1,0 +1,30 @@
+{
+  "pdf_pages": 6,
+  "pdf_searchable_text": true,
+  "dataset_rows": {
+    "development": 2274,
+    "test": 533
+  },
+  "dataset_unique_patients": {
+    "development": 230,
+    "test": 59
+  },
+  "dataset_class_patients": {
+    "development": {
+      "2": 70,
+      "0": 57,
+      "1": 103
+    },
+    "test": {
+      "2": 24,
+      "0": 14,
+      "1": 21
+    }
+  },
+  "anonymous_fold_disjointness_and_coverage": "PASS",
+  "source_file_hashes_verified": 49,
+  "v14_cv_15case_mean_sd_reproduced": "6 model-arm groups PASS",
+  "v14_holdout_5seed_mean_sd_reproduced": "PASS",
+  "privacy": "Original hospital IDs not exported; anonymous IDs only in dataset; source metadata mappings excluded",
+  "limitations": "Not independent comprehensive leakage audit; no external validation or Drive upload"
+}
